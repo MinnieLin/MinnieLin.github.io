@@ -3,7 +3,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import avatar from '../public/images/the-avatar.png'
+// import avatar from '../public/images/the-avatar.png'
+import avatar from '../public/images/about-img.jpg'
 import { NavLink } from './atoms'
 import { ThemeToggle } from './themeToggle'
 

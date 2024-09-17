@@ -26,6 +26,10 @@ const routes = [
     path: '/about',
     label: 'ABOUT',
   },
+  {
+    path: '/publications',
+    label: 'PUBLICATIONS',
+  },
 ]
 
 export function Header() {

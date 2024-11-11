@@ -56,9 +56,15 @@ export function Footer() {
             >
               © 2024 - present. Zexin (Jason) Xu. All Rights Reserved.
               <br />
-              Built with Next.js and{' '}
-              <a href="https://pages.github.com/">Github Pages</a>. Last
-              updated: {lastUpdated}
+              Built with{' '}
+              <a className="underline" href="https://nextjs.org/">
+                Next.js
+              </a>{' '}
+              and{' '}
+              <a className="underline" href="https://pages.github.com/">
+                Github Pages
+              </a>
+              . Last updated: {lastUpdated}
             </span>
             <div className="flex flex-row items-center justify-center space-x-6 md:justify-end">
               <span>

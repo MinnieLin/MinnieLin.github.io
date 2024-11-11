@@ -46,7 +46,7 @@ export function Header() {
           className="flex items-center border-white group "
         >
           <div>
-            <div className="overflow-hidden transition-transform ease-in-out border-2 rounded-full w-9 h-9 group-hover:-translate-y-1">
+            <div className="overflow-hidden transition-transform ease-in-out border-3 rounded-full w-9 h-9 group-hover:-translate-y-1">
               <Image
                 src={JJIcon}
                 alt="My avatar"

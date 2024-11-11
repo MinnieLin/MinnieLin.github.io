@@ -40,11 +40,7 @@ export default async function Projects() {
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <a
-      href={project.link}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a href={project.link} target="_blank" rel="noopener noreferrer">
       <div className="relative flex flex-col justify-between w-full h-full px-6 py-5 group bg-back-secondary hover:bg-back-secondary">
         <div className="flex justify-between pb-10 space-x-3 sm:space-x-0">
           <div>

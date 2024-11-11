@@ -31,10 +31,16 @@ const routes = [
   },
 ]
 
+const lastUpdated = new Date().toLocaleDateString('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+})
+
 export function Footer() {
   return (
     <footer className="relative w-full h-36 overflow-hidden bg-back-secondary text-secondary">
-      <div className="container h-full px-5 pt-12 pb-20 m-auto max-w-screen-xl md:px-20">
+      <div className="container h-full px-5 pt-8 pb-8 m-auto max-w-screen-xl md:px-20">
         <div className="container flex-col justify-between md:space-y-8">
           <nav className="flex-row items-center justify-center hidden space-x-6 text-sm lg:flex md:justify-end">
             {routes.map(route => (
@@ -49,6 +55,10 @@ export function Footer() {
               aria-label="Copyright"
             >
               © 2024 - present. Zexin (Jason) Xu. All Rights Reserved.
+              <br />
+              Built with Next.js and{' '}
+              <a href="https://pages.github.com/">Github Pages</a>. Last
+              updated: {lastUpdated}
             </span>
             <div className="flex flex-row items-center justify-center space-x-6 md:justify-end">
               <span>

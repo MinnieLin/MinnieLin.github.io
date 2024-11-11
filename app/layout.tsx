@@ -19,18 +19,18 @@ const FontFiraCode = Fira_Code({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Jeff Jadulco | Game and Web Developer',
-    template: '%s | Jeff Jadulco',
+    default: 'Zexin (Jason) Xu | PhD Student at UTD',
+    template: '%s | Jason Xu',
   },
-  description: 'Game and Web Developer',
+  description: 'PhD Student at UTD',
   openGraph: {
-    title: 'Jeff Jadulco',
-    description: 'Game and Web Developer',
-    url: 'https://jeffjadulco.com',
-    siteName: 'Jeff Jadulco',
+    title: 'Zexin (Jason) Xu',
+    description: 'PhD Student at UTD',
+    url: 'https://asonjay.github.io',
+    siteName: 'Zexin (Jason) Xu',
     images: [
       {
-        url: 'https://jeffjadulco.com/static/og/default.png',
+        url: 'https://asonjay.github.io/static/og/default.png',
         width: 1280,
         height: 675,
       },
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    creator: '@jeffjadulco',
-    title: 'Jeff Jadulco',
+    creator: '@',
+    title: 'Jason Xu',
     card: 'summary_large_image',
   },
   icons: {
@@ -67,7 +67,7 @@ export default function RootLayout({
       >
         <MobileNav />
         <Header />
-        <main className="container flex-grow max-w-screen-lg px-5 m-auto mt-16 sm:px-12 md:px-20">
+        <main className="container flex-grow max-w-screen-xl px-5 m-auto mt-16 sm:px-12 md:px-20">
           {children}
         </main>
         <Footer />

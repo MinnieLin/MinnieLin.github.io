@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 // import avatar from '../public/images/the-avatar.png'
-import avatar from '../public/images/about-img.png'
+import JJIcon from '../public/images/JJ-icon.png'
 import { NavLink } from './atoms'
 import { ThemeToggle } from './themeToggle'
 
@@ -35,7 +35,7 @@ const routes = [
 export function Header() {
   const path = usePathname()
   return (
-    <header className="container h-32 max-w-screen-lg px-5 m-auto overflow-hidden sm:px-12 md:px-20">
+    <header className="container h-32 max-w-screen-xl px-5 m-auto overflow-hidden sm:px-12 md:px-20">
       <nav
         className="flex items-center justify-start h-full mt-auto space-x-6 text-sm md:justify-start"
         aria-label="Main Navigation"
@@ -48,7 +48,7 @@ export function Header() {
           <div>
             <div className="overflow-hidden transition-transform ease-in-out border-2 rounded-full w-9 h-9 group-hover:-translate-y-1">
               <Image
-                src={avatar}
+                src={JJIcon}
                 alt="My avatar"
                 width={36}
                 height={36}

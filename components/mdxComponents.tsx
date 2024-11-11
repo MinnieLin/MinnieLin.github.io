@@ -70,9 +70,10 @@ export const components = {
       />
     )
   },
-  p: ({ ...props }) => {
-    return <p {...props} className="my-6 leading-7 lg:leading-8" />
+  p: props => {
+    return <p {...props} />
   },
+  br: props => <br {...props} className="block my-8" />,
   code: ({ children, showLineNumbers, fileName, id }) => {
     return (
       <React.Fragment>

@@ -141,7 +141,7 @@ export const LinkedIn24 = ({ className }: IconProps) => {
       viewBox="0 1 32 32"
       role="img"
     >
-      <title>Google Scholar</title>
+      <title>LinkedIn</title>
       <path stroke="none" d="M0 0h24v24H0z"></path>
       <path
         d="M0.92 11.32c-0.48 0-0.84 0.36-0.84 0.84v11.76c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-11.76c0-0.48-0.36-0.84-0.84-0.84zM1.84 8.16c0 0.508-0.412 0.92-0.92 0.92s-0.92-0.412-0.92-0.92c0-0.508 0.412-0.92 0.92-0.92s0.92 0.412 0.92 0.92zM15.28 11.68c-1.8-0.96-4.44-0.28-8.040 2v-1.52c0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84v11.76c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-8.24c4.52-3.12 6.48-2.92 7.24-2.52 1.040 0.56 1.040 2.080 1.040 2.080v8.68c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-8.64c0-0.12 0-2.56-1.92-3.6z"
@@ -344,6 +344,67 @@ export const About24 = ({ className }: IconProps) => {
         strokeLinejoin="round"
         strokeWidth={2}
         d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+    </svg>
+  )
+}
+
+export const News24 = ({ className }: IconProps) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className={classNames('w-6 h-6 text-accent', className)}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      role="img"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M13,13H11a1,1,0,0,1-1-1V4a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1v8A1,1,0,0,1,13,13Zm1,6a2,2,0,1,0-2,2A2,2,0,0,0,14,19Z"
+      />
+    </svg>
+  )
+}
+
+export const Papers24 = ({ className }: IconProps) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className={classNames('w-6 h-6 text-accent', className)}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      role="img"
+    >
+      <g
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={0.75}
+        fill="currentColor"
+      >
+        <path d="M18 6H7V5h11zm0 2H7v1h11zm0 3H7v1h11zm-4 4h4v-1h-4zm0 3h3v-1h-3zm-2 2H7v-6h5zm-1-5H8v4h3zm10 8H4V2h17zM20 3H5v19h15z" />
+      </g>
+    </svg>
+  )
+}
+
+export const Top24 = ({ className }: IconProps) => {
+  return (
+    <svg
+      className={classNames('w-6 h-6 text-accent', className)}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M5 15l7-7 7 7"
       />
     </svg>
   )

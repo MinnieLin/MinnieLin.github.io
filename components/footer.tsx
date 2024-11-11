@@ -11,6 +11,7 @@ const routes = [
   {
     path: '/',
     label: 'HOME',
+    exact: true,
   },
   {
     path: '/blog',
@@ -24,12 +25,16 @@ const routes = [
     path: '/about',
     label: 'ABOUT',
   },
+  {
+    path: '/publications',
+    label: 'PUBLICATIONS',
+  },
 ]
 
 export function Footer() {
   return (
-    <footer className="relative w-full h-56 overflow-hidden bg-back-secondary text-secondary">
-      <div className="container h-full px-5 pt-24 pb-12 m-auto md:max-w-screen-md lg:max-w-screen-lg md:px-20">
+    <footer className="relative w-full h-36 overflow-hidden bg-back-secondary text-secondary">
+      <div className="container h-full px-5 pt-12 pb-20 m-auto max-w-screen-xl md:px-20">
         <div className="container flex-col justify-between md:space-y-8">
           <nav className="flex-row items-center justify-center hidden space-x-6 text-sm lg:flex md:justify-end">
             {routes.map(route => (
@@ -43,7 +48,7 @@ export function Footer() {
               className="self-center text-xs tracking-wider md:self-end"
               aria-label="Copyright"
             >
-              © 2020 - 2023. Jeff Jadulco. All Rights Reserved.
+              © 2024 - present. Zexin (Jason) Xu. All Rights Reserved.
             </span>
             <div className="flex flex-row items-center justify-center space-x-6 md:justify-end">
               <span>

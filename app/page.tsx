@@ -16,6 +16,7 @@ import PostList from '../components/postList'
 // import ProjectList from '../components/projectList'
 import avatar from '../public/images/profile-img.jpg'
 import { components as mdx } from '../components/mdxComponents'
+import { wenKai } from './fonts'
 
 export default async function Page() {
   return (
@@ -24,11 +25,23 @@ export default async function Page() {
         {/* Introduction  */}
         <div>
           <p className="max-w-3xl mt-12 mb-5 text-3xl font-semibold lg:mt-0 sm:text-4xl sm:text-left md:text-left lg:text-left">
-            Hi there, I’m Jason! 👋
+            Hi there, I’m Zexin Xu (
+            <span className={wenKai.className}>徐泽鑫</span>
+            )! 👋
           </p>
           <div className="relative text-primary">
             <article className="max-w-3xl min-w-0 leading-tight text-base lg:text-base text-base">
               <mdx.p>
+                <div className="mb-4">
+                  <mdx.code
+                    showLineNumbers={false}
+                    fileName=""
+                    id="introHeader"
+                  >
+                    💡 My name is pronounced as "Zeh-Shin She", and I also go by{' '}
+                    <b>Jason</b>.
+                  </mdx.code>
+                </div>
                 <div className="mb-2">
                   I am a first-year Ph.D. student in Computer Science at the
                   University of Texas at Dallas, advised by{' '}

@@ -14,9 +14,9 @@ export const metadata = {
 }
 
 export default function Publications({
-  initialPublications,
+  initialPublications = [],
 }: {
-  initialPublications: Publication[]
+  initialPublications?: Publication[]
 }) {
   const [publications, setPublications] = useState<Publication[]>(
     initialPublications
@@ -58,13 +58,15 @@ export default function Publications({
       </div>
       <section className="mb-6">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:-mx-6 justify-items-start md:grid-cols-3 lg:grid-cols-4">
-          {filteredPublications.map(publication => {
-            return (
+          {filteredPublications && filteredPublications.length > 0 ? (
+            filteredPublications.map(publication => (
               <ButtonPop key={publication.id}>
                 <PublicationCard publication={publication} />
               </ButtonPop>
-            )
-          })}
+            ))
+          ) : (
+            <p>No publications found.</p>
+          )}
         </div>
       </section>
       <Contact />

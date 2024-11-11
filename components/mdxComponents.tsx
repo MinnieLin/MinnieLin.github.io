@@ -11,7 +11,7 @@ export const components = {
       return (
         <a
           {...props}
-          className="underline text-fore-subtle hover:text-accent focus-visible:text-accent"
+          className="text-accent hover:underline focus-visible:text-accent"
           href={href}
           target="_blank"
           rel="noopener"

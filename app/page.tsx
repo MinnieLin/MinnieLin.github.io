@@ -8,11 +8,13 @@ import {
   Twitter24,
   Blog24,
   Project24,
+  GoogleScholar24,
+  LinkedIn24,
 } from '../components/icons'
 import PostList from '../components/postList'
 import ProjectList from '../components/projectList'
-// import avatar from '../public/images/the-avatar.png'
-import avatar from '../public/images/about-img.jpg'
+import avatar from '../public/images/about-img-2.jpg'
+import { components as mdx } from '../components/mdxComponents'
 
 export default async function Page() {
   return (
@@ -20,18 +22,34 @@ export default async function Page() {
       <div className="flex flex-col-reverse items-center mt-12 lg:flex-row lg:justify-between lg:space-x-6">
         <div>
           <p className="max-w-3xl mt-12 text-3xl font-semibold lg:mt-0 sm:text-4xl sm:text-left md:text-left lg:text-left">
-            Hi, I’m Jeff. I’m an experienced game developer with deep interest
-            in modern web development.
+            Hi there, I’m Jason! 👋
           </p>
           <div className="relative text-primary">
-            text text see if the text render here
+            <article className="max-w-2xl min-w-0 text-base lg:text-lg text-fore-subtle">
+              <mdx.p>
+                <b>About Me</b>: I am an alumnus of The Ohio State University,
+                where I earned my M.S. in Computer Science and Engineering under
+                the expert guidance of{' '}
+                <mdx.a href="https://google.com">Dr. Yu Su. </mdx.a> Driven by a
+                vision to leverage AI for the betterment of humanity, my
+                academic interests has spanned across NLP, Vision & Language,
+                Embodied AI, and Large Language Models. During my master’s
+                program, I led the software engineering team for SalsaBot,
+                contributing significantly to the first Amazon Alexa Prize
+                Simbot Challenge. Prior to pursuing my master’s degree, I
+                obtained my B.S. degree in Computer Science and Engineering from
+                The Ohio State University. <br />
+                oh!fdsfffdsfdsfdadsfafa <br />
+                okokokoko
+              </mdx.p>
+            </article>
           </div>
         </div>
         <div>
           <div className="relative">
             <Blob />
             <div className="absolute top-0 flex items-center justify-center w-full h-full">
-              <div className="w-32 h-32 overflow-hidden rounded-full md:h-40 md:w-40 lg:h-48 lg:w-48 pointer-events-none">
+              <div className="w-32 h-32 overflow-hidden rounded-full md:h-40 md:w-40 lg:h-56 lg:w-56 pointer-events-none">
                 <Image
                   src={avatar}
                   alt="My avatar"
@@ -44,8 +62,8 @@ export default async function Page() {
               </div>
             </div>
           </div>
-          <div className="mt-3">
-            <div className="flex flex-row items-center space-x-4 justify-center">
+          <div className="mt-5">
+            <div className="flex flex-row items-center space-x-5 justify-center">
               <span>
                 <a
                   href="mailto:hey@jeffjadulco.com"
@@ -78,6 +96,30 @@ export default async function Page() {
                   className="focus:text-accent"
                 >
                   <Twitter24 className="transition-transform ease-in-out hover:-translate-y-1 hover:text-accent" />
+                </a>
+              </span>
+              <span>
+                <a
+                  href="https://twitter.com/jeffjadulco"
+                  aria-label="Visit Google Scholar Profile"
+                  title="Visit Google Scholar Profile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:text-accent"
+                >
+                  <GoogleScholar24 className="transition-transform ease-in-out hover:-translate-y-1 hover:text-accent" />
+                </a>
+              </span>
+              <span>
+                <a
+                  href="https://twitter.com/jeffjadulco"
+                  aria-label="Visit LinkedIn Profile"
+                  title="Visit LinkedIn Profile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:text-accent"
+                >
+                  <LinkedIn24 className="transition-transform ease-in-out hover:-translate-y-1 hover:text-accent" />
                 </a>
               </span>
             </div>

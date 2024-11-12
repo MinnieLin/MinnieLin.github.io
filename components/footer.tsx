@@ -1,3 +1,6 @@
+'use client'
+import { useState, useEffect } from 'react'
+
 import { NavLink } from './atoms'
 import {
   GitHub24,
@@ -31,13 +34,19 @@ const routes = [
   },
 ]
 
-const lastUpdated = new Date().toLocaleDateString('en-US', {
-  month: 'long',
-  day: 'numeric',
-  year: 'numeric',
-})
-
 export function Footer() {
+  const [lastUpdated, setLastUpdated] = useState('')
+
+  useEffect(() => {
+    setLastUpdated(
+      new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      })
+    )
+  }, [])
+
   return (
     <footer className="relative w-full h-36 overflow-hidden bg-back-secondary text-secondary">
       <div className="container h-full px-5 pt-8 pb-8 m-auto max-w-screen-xl md:px-20">

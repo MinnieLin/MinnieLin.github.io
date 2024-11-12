@@ -1,3 +1,5 @@
+'use client'
+import { useState, useEffect } from 'react'
 import { useAnalyticsEvent } from '../hooks/useAnalytics'
 import { useDarkMode } from '../hooks/useDarkMode'
 import { Moon20, Sun20 } from './icons'
@@ -5,6 +7,17 @@ import { Moon20, Sun20 } from './icons'
 export function ThemeToggle({ className }: { className?: string }) {
   const [isDark, setIsDark] = useDarkMode()
   const { trackCustomEvent } = useAnalyticsEvent()
+  const [mounted, setMounted] = useState(false)
+
+  // Wait until mounted on client
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!mounted) {
+    return <div className={className} /> // Placeholder with same dimensions
+  }
 
   return (
     <button

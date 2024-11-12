@@ -1,9 +1,9 @@
 {
-  "name": "jeffjadulco.com",
+  "name": "asonjay.github.com",
   "private": true,
   "description": "My personal website made using Next.js",
   "version": "3.0.0",
-  "author": "Jeff Jadulco <hey@jeffjadulco.com>",
+  "author": "Zexin Xu <zexin.xu@utdallas.edu>",
   "dependencies": {
     "@formspree/react": "^2.4.1",
     "@next/font": "^14.2.15",

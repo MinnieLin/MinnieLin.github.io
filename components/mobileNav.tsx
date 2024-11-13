@@ -5,26 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { ThemeToggle } from './themeToggle'
-
-const routes = [
-  {
-    path: '/',
-    label: 'HOME',
-    exact: true,
-  },
-  {
-    path: '/blog',
-    label: 'BLOG',
-  },
-  {
-    path: '/projects',
-    label: 'PROJECTS',
-  },
-  {
-    path: '/about',
-    label: 'ABOUT',
-  },
-]
+import { routes } from '../lib/route'
 
 export function MobileNav() {
   const [navShow, setNavShow] = useState(false)

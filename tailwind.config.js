@@ -24,8 +24,19 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)', ...fontFamily.sans],
-        mono: ['var(--font-fira-code)', ...fontFamily.mono],
+        sans: [
+          'var(--font-inter)', // Keep Next.js font variable
+          'Helvetica Neue', // Add Helvetica Neue first
+          'Helvetica', // Then Helvetica
+          'Arial', // Arial as fallback
+          'ui-sans-serif', // System UI fonts as fallbacks
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'sans-serif',
+        ],
+        mono: ['var(--font-fira-code)', 'Fira Code', 'Monaco', 'monospace'],
       },
       animation: {
         'blob-spin': 'blobbing 25s linear infinite',

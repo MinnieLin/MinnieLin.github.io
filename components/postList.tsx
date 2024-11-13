@@ -20,12 +20,12 @@ export async function PostList({
         {posts.map(post => (
           <li key={post.slug} className="py-5">
             <Link href={`blog/${post.slug}`}>
-              <div className="flex flex-col px-8 py-5 -my-5 transition-colors ease-in-out -mx-7 group sm:flex-row sm:justify-between sm:items-end hover:bg-back-secondary focus:bg-back-secondary focus:text-accent">
+              <div className="flex flex-col px-8 py-3 -my-5 transition-colors ease-in-out -mx-7 group sm:flex-row sm:justify-between sm:items-end hover:bg-back-secondary focus:bg-back-secondary focus:text-accent">
                 <div>
-                  <h3 className="text-xl font-semibold group-hover:text-accent">
+                  <span className="text-lg font-semibold group-hover:text-accent">
                     {post.title}
-                  </h3>
-                  <h4 className="font-medium text-fore-subtle">
+                  </span>
+                  <h4 className="text-sm text-fore-subtle">
                     {post.description}
                   </h4>
                 </div>

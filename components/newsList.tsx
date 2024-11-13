@@ -31,7 +31,9 @@ export async function NewsList({
                       <Content
                         components={{
                           ...components,
-                          p: props => <p {...props} className="my-0" />,
+                          p: props => (
+                            <p {...props} className="my-0 hover:text-accent" />
+                          ),
                         }}
                       />
                     </div>

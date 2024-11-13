@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import { routes } from '../lib/route'
 
 import { NavLink } from './atoms'
 import {
@@ -9,30 +10,6 @@ import {
   GoogleScholar24,
   LinkedIn24,
 } from './icons'
-
-const routes = [
-  {
-    path: '/',
-    label: 'HOME',
-    exact: true,
-  },
-  {
-    path: '/about',
-    label: 'ABOUT',
-  },
-  {
-    path: '/publications',
-    label: 'PUBLICATIONS',
-  },
-  {
-    path: '/blog',
-    label: 'BLOG',
-  },
-  // {
-  //   path: '/projects',
-  //   label: 'PROJECTS',
-  // },
-]
 
 export function Footer() {
   const [lastUpdated, setLastUpdated] = useState('')
@@ -63,8 +40,6 @@ export function Footer() {
               className="self-center text-xs tracking-wider md:self-end"
               aria-label="Copyright"
             >
-              © 2024 - present. Zexin (Jason) Xu. All Rights Reserved.
-              <br />
               Built with{' '}
               <a className="underline" href="https://nextjs.org/">
                 Next.js
@@ -73,7 +48,16 @@ export function Footer() {
               <a className="underline" href="https://pages.github.com/">
                 Github Pages
               </a>
-              . Last updated: {lastUpdated}
+              . Inspired by{' '}
+              <a className="underline" href="https://jeffjadulco.com/">
+                Jeff Jadulco
+              </a>{' '}
+              and{' '}
+              <a className="underline" href="https://victordibia.com/">
+                Victor Dibia
+              </a>
+              . <br />© 2024 - present. Zexin (Jason) Xu. All Rights Reserved.
+              Last updated: {lastUpdated}
             </span>
             <div className="flex flex-row items-center justify-center space-x-6 md:justify-end">
               <span>

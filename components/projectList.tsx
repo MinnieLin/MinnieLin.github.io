@@ -12,7 +12,7 @@ function ProjectCard({ project }: { project: Project }) {
       >
         <div className="flex justify-between px-8 py-5 -my-5 transition-colors ease-in-out -mx-7 sm:items-end hover:bg-back-secondary group-focus:bg-back-secondary">
           <div>
-            <h3 className="text-xl font-semibold group-hover:text-accent">
+            <h3 className="text-md font-semibold group-hover:text-accent">
               {project.title}
             </h3>
             <h4 className="font-medium text-fore-subtle">

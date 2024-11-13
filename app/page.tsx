@@ -17,6 +17,7 @@ import NewsList from 'components/newsList'
 import PublicationList from 'components/publicationList'
 import Introduction from '../components/introduction'
 import avatar from '../public/images/profile-img.jpg'
+import Link from 'next/link'
 import { components as mdx } from '../components/mdxComponents'
 import { wenKai } from './fonts'
 
@@ -31,7 +32,7 @@ export default async function Page() {
             <span className={wenKai.className}>徐泽鑫</span>
             )! 👋
           </p>
-          <div className="text-xs mb-4">
+          <div className="text-sm mb-4">
             <mdx.code showLineNumbers={false} fileName={''} id="">
               💡 My name is pronounced as "Zeh-Shin She", and I also go by{' '}
               <b>Jason</b>.
@@ -125,7 +126,7 @@ export default async function Page() {
         </div>
       </div>
       {/* News  */}
-      <div className="flex items-center mt-16 space-x-3">
+      <div className="flex items-center mt-20 space-x-3">
         <span className="p-3 rounded-full bg-back-subtle">
           <News24 />
         </span>
@@ -135,25 +136,47 @@ export default async function Page() {
       </div>
       <NewsList />
       {/* Publications */}
-      <div className="flex items-center mt-16 space-x-3">
+      <div className="flex items-center mt-20 space-x-3">
         <span className="p-3 rounded-full bg-back-subtle">
           <Papers24 />
         </span>
         <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent">
-          Publications
+          Selected Publications
         </span>
       </div>
       <PublicationList selectedOnly={true} />
+      <div className="mx-1 mt-6 flex justify-left items-center">
+        <Link
+          href="/publications"
+          className="flex items-center space-x-2 text-fore-subtle hover:text-accent transition-transform ease-in-out hover:translate-x-1"
+        >
+          <span className="text-xs uppercase tracking-[.2em]">
+            All Publications
+          </span>
+          <span>→</span>
+        </Link>
+      </div>
       {/* Blogs  */}
-      <div className="flex items-center mt-16 space-x-3">
+      <div className="flex items-center mt-20 space-x-3">
         <span className="p-3 rounded-full bg-back-subtle">
           <Blog24 />
         </span>
         <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent">
-          Blogs
+          Recent Blog Posts
         </span>
       </div>
       <PostList />
+      <div className="mx-1 mt-6 flex justify-left items-center">
+        <Link
+          href="/blog"
+          className="flex items-center space-x-2 text-fore-subtle hover:text-accent transition-transform ease-in-out hover:translate-x-1"
+        >
+          <span className="text-xs uppercase tracking-[.2em]">
+            All Blog Posts
+          </span>
+          <span>→</span>
+        </Link>
+      </div>
       {/* <div className="flex items-center mt-32 mb-2 space-x-3">
         <span className="p-3 rounded-full bg-back-subtle">
           <Project24 />

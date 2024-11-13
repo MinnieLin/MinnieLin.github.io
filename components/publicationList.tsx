@@ -55,57 +55,59 @@ export function PublicationList({
       <div className="mt-3">
         {years.map((year, yearIndex) => (
           <div key={year}>
-            {yearIndex !== 0 && (
-              <hr className="border-b border-back-subtle my-6" />
-            )}
-            <div className="space-y-8">
-              {groupedPubs[year].map((pub, index) => (
-                <li key={index} className="group list-none">
-                  <div>
-                    <div className="flex justify-between items-start gap-8">
-                      <span className="text-md font-bold group-hover:text-accent">
-                        {pub.title}
-                      </span>
-                      {index === 0 && (
-                        <span className="font-bold text-md text-fore-subtle shrink-0">
-                          {year}
+            {yearIndex !== 0 && <hr className="border-back-subtle my-6" />}
+            <div className="grid grid-cols-[1fr_80px] gap-8">
+              {' '}
+              {/* Swapped the column widths */}
+              <div className="border-back-subtle space-y-8">
+                {groupedPubs[year].map((pub, index) => (
+                  <li key={index} className="group list-none">
+                    <div>
+                      <div className="flex items-start gap-8 ">
+                        <span className="text-lg font-semibold group-hover:text-accent">
+                          {pub.title}
                         </span>
-                      )}
+                      </div>
+                      <p className="text-sm text-fore-subtle">
+                        {formatAuthors(pub.authors)}
+                      </p>
+                      <p className="text-sm italic text-fore-subtle">
+                        {pub.venue}
+                      </p>
+                      <div className="mt-1 space-x-4">
+                        {pub.abbr && (
+                          <span className="inline-block px-2 py-1 text-xs border border-accent font-medium bg-accent text-white rounded">
+                            {pub.abbr}
+                          </span>
+                        )}
+                        {pub.pdf && (
+                          <Link
+                            href={pub.pdf}
+                            className="inline-block px-2 py-1 text-xs border border-accent text-accent hover:bg-accent hover:text-white rounded transition-colors"
+                            target="_blank"
+                          >
+                            PDF
+                          </Link>
+                        )}
+                        {pub.url && !pub.pdf && (
+                          <Link
+                            href={pub.url}
+                            className="inline-block px-3 py-1 text-sm border border-accent text-accent hover:bg-accent hover:text-white rounded transition-colors"
+                            target="_blank"
+                          >
+                            PDF
+                          </Link>
+                        )}
+                      </div>
                     </div>
-                    <p className="mt-2 text-sm text-fore-subtle">
-                      {formatAuthors(pub.authors)}
-                    </p>
-                    <p className="mt-1 text-sm italic text-fore-subtle">
-                      {pub.venue}
-                    </p>
-                    <div className="mt-2 space-x-4">
-                      {pub.abbr && (
-                        <span className="inline-block px-3 py-1 text-sm font-medium bg-accent text-white rounded">
-                          {pub.abbr}
-                        </span>
-                      )}
-                      {pub.pdf && (
-                        <Link
-                          href={pub.pdf}
-                          className="inline-block px-3 py-1 text-sm border border-accent text-accent hover:bg-accent hover:text-white rounded transition-colors"
-                          target="_blank"
-                        >
-                          PDF
-                        </Link>
-                      )}
-                      {pub.url && !pub.pdf && (
-                        <Link
-                          href={pub.url}
-                          className="inline-block px-3 py-1 text-sm border border-accent text-accent hover:bg-accent hover:text-white rounded transition-colors"
-                          target="_blank"
-                        >
-                          PDF
-                        </Link>
-                      )}
-                    </div>
-                  </div>
-                </li>
-              ))}
+                  </li>
+                ))}
+              </div>
+              <div className="text-3xl text-fore-subtle text-right opacity-20">
+                {' '}
+                {/* Added text-right */}
+                {year}
+              </div>
             </div>
           </div>
         ))}

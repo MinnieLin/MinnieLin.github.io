@@ -18,7 +18,7 @@ export default function Publications() {
         Publications
       </h1>
 
-      <p className=" mb-2 text-fore-subtle">
+      <p className="mb-2 text-fore-subtle">
         My research focuses on advancing the capabilities and security of Large
         Language Models (LLMs), with particular emphasis on code understanding,
         robustness against adversarial attacks, system integration, and
@@ -26,7 +26,7 @@ export default function Publications() {
         code generation, attack/defense mechanisms for LLMs, development of
         reliable LLM-powered systems, and AI-enhanced educational technology.
       </p>
-      <div className="mb-6 border-t-2 border-back-subtle"></div>
+      <div className="border-t-2 border-dotted border-back-subtle"></div>
       <PublicationList selectedOnly={false} />
     </Fragment>
   )

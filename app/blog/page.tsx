@@ -20,12 +20,15 @@ export default async function Blog() {
         Blog
       </h1>
 
-      <p className="max-w-md mb-12 text-fore-subtle">
-        I <em className="italic">sometimes</em> write about things I learn in
-        web development and also stuff that I find interesting
+      <p className="mb-2 text-fore-subtle">
+        Welcome to my little corner of the internet! Here's where I dump my
+        brain thoughts about research, random discoveries, and whatever else
+        catches my attention. <b>Fair warning</b>: I update this about as
+        frequently as I remember to water my plants - which is to say, when I
+        remember they exist 😅
       </p>
+      <div className="border-t-2 border-dotted border-back-subtle"></div>
       <PostList />
-      <Contact />
     </Fragment>
   )
 }

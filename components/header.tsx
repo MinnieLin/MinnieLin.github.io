@@ -6,30 +6,7 @@ import { usePathname } from 'next/navigation'
 import JJIcon from '../public/images/JJ-icon.png'
 import { NavLink } from './atoms'
 import { ThemeToggle } from './themeToggle'
-
-const routes = [
-  {
-    path: '/',
-    label: 'HOME',
-    exact: true,
-  },
-  {
-    path: '/about',
-    label: 'ABOUT',
-  },
-  {
-    path: '/publications',
-    label: 'PUBLICATIONS',
-  },
-  {
-    path: '/blog',
-    label: 'BLOG',
-  },
-  // {
-  //   path: '/projects',
-  //   label: 'PROJECTS',
-  // },
-]
+import { routes } from '../lib/route'
 
 export function Header() {
   const path = usePathname()

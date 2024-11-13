@@ -50,7 +50,7 @@ export default async function BlogPost({ params }) {
     <Fragment>
       <div
         className={classNames(
-          'relative flex justify-between mt-12 mb-12 xl:-mr-52',
+          'relative flex justify-between mt-12 mb-12 xl:-mr-26',
           {
             'flex-row-reverse': Boolean(frontmatter.toc),
           }
@@ -82,13 +82,13 @@ export default async function BlogPost({ params }) {
               </Fragment>
             )}
           </div>
-          <h1 className="mb-10 text-4xl font-extrabold lg:text-5xl text-fore-primary">
+          <h1 className="mb-10 text-3xl font-extrabold lg:text-5xl text-fore-primary">
             {frontmatter.title}
           </h1>
           <Component components={components} />
         </article>
       </div>
-      <Feedback post={frontmatter} />
+      {/* <Feedback post={frontmatter} /> */}
     </Fragment>
   )
 }

@@ -33,7 +33,6 @@ export default async function Projects() {
           })}
         </div>
       </section>
-      <Contact />
     </Fragment>
   )
 }

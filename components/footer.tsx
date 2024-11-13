@@ -28,10 +28,10 @@ const routes = [
     path: '/blog',
     label: 'BLOG',
   },
-  {
-    path: '/projects',
-    label: 'PROJECTS',
-  },
+  // {
+  //   path: '/projects',
+  //   label: 'PROJECTS',
+  // },
 ]
 
 export function Footer() {
@@ -78,8 +78,8 @@ export function Footer() {
             <div className="flex flex-row items-center justify-center space-x-6 md:justify-end">
               <span>
                 <a
-                  href="mailto:hey@jeffjadulco.com"
-                  aria-label="Email hey@jeffjadulco.com"
+                  href="mailto:zexin.xu@utdallas.edu"
+                  aria-label="Email zexin.xu@utdallas.edu"
                   title="Email"
                   className="focus:text-accent"
                 >
@@ -88,7 +88,7 @@ export function Footer() {
               </span>
               <span>
                 <a
-                  href="https://github.com/jeffjadulco"
+                  href="https://github.com/asonjay"
                   aria-label="Visit GitHub profile"
                   title="Visit GitHub profile"
                   target="_blank"
@@ -100,7 +100,7 @@ export function Footer() {
               </span>
               <span>
                 <a
-                  href="https://twitter.com/jeffjadulco"
+                  href="https://x.com/zexin_jason_xu"
                   aria-label="Visit Twitter profile"
                   title="Visit Twitter profile"
                   target="_blank"
@@ -112,7 +112,7 @@ export function Footer() {
               </span>
               <span>
                 <a
-                  href="https://twitter.com/jeffjadulco"
+                  href="https://scholar.google.com/citations?user=NvnoD1kAAAAJ&hl=en"
                   aria-label="Visit Google Scholar Profile"
                   title="Visit Google Scholar Profile"
                   target="_blank"
@@ -124,7 +124,7 @@ export function Footer() {
               </span>
               <span>
                 <a
-                  href="https://twitter.com/jeffjadulco"
+                  href="https://www.linkedin.com/in/zexin-xu/"
                   aria-label="Visit LinkedIn Profile"
                   title="Visit LinkedIn Profile"
                   target="_blank"

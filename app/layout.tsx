@@ -3,6 +3,7 @@ import { Fira_Code, Inter } from 'next/font/google'
 import { Analytics } from '../components/analytics'
 import { Footer } from '../components/footer'
 import { Header } from '../components/header'
+import { Contact } from '../components/contact'
 import { MobileNav } from '../components/mobileNav'
 import './styles/codeblock.css'
 import './styles/globals.css'
@@ -70,6 +71,7 @@ export default function RootLayout({
         <main className="container flex-grow max-w-screen-xl px-5 m-auto mt-16 sm:px-12 md:px-20">
           {children}
         </main>
+        <Contact />
         <Footer />
         <Analytics />
         <BackgroundNoise />

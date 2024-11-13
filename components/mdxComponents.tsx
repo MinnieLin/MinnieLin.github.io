@@ -71,7 +71,7 @@ export const components = {
     )
   },
   p: props => {
-    return <p {...props} />
+    return <p {...props} className="mb-4" />
   },
   br: props => <br {...props} className="block my-8" />,
   code: ({ children, showLineNumbers, fileName, id }) => {

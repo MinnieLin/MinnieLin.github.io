@@ -6,11 +6,16 @@
   "author": "Zexin Xu <zexin.xu@utdallas.edu>",
   "dependencies": {
     "@formspree/react": "^2.4.1",
+    "@mapbox/rehype-prism": "^0.9.0",
     "@next/font": "^14.2.15",
     "bibtex-parse-js": "^0.0.24",
+    "gray-matter": "^4.0.3",
+    "mapbox": "^1.0.0-beta10",
     "next": "^13.4.9",
+    "next-mdx-remote": "^5.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.3.0",

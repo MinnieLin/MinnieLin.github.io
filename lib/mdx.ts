@@ -66,4 +66,28 @@ async function getAllFrontMatters(): Promise<Frontmatter[]> {
     )
 }
 
-export { getAllFrontMatters, getMdxBySlug, getMdxByPath }
+async function getAllNews() {
+  const paths = await globby(['content/news/**/*.mdx'])
+  const news = await Promise.all(
+    paths.map(async filePath => {
+      const source = fs.readFileSync(filePath, 'utf8')
+      const { code, frontmatter } = await bundleMDX(source)
+
+      return {
+        code,
+        frontmatter,
+        slug: path.basename(filePath).replace('.mdx', ''),
+      }
+    })
+  )
+  return news
+    .filter(Boolean)
+    .filter(news => news.frontmatter.isPublished)
+    .sort(
+      (a, b) =>
+        new Date(b.frontmatter.publishedAt).getTime() -
+        new Date(a.frontmatter.publishedAt).getTime()
+    )
+}
+
+export { getAllFrontMatters, getAllNews, getMdxBySlug, getMdxByPath }

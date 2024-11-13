@@ -13,7 +13,7 @@ export function Contact() {
 
   return (
     <div className="mt-32 full-width-container bg-back-secondary">
-      <div className="container max-w-screen-lg pt-16 mx-auto">
+      <div className="container max-w-screen-lg pt-8 mx-auto">
         {/* <h1 className="text-3xl font-semibold text-center">
           Get in touch{' '}
           <span role="img" aria-label="wave">

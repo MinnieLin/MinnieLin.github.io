@@ -47,7 +47,6 @@ export default async function About() {
         </h3>
         <RichPresenceList presenceList={[notion, spotify, letterboxd, steam]} />
       </div>
-      <Contact />
     </Fragment>
   )
 }

@@ -29,6 +29,7 @@ module.exports = {
       },
       animation: {
         'blob-spin': 'blobbing 25s linear infinite',
+        'bounce-slow': 'bounce 1s infinite',
       },
       keyframes: {
         blobbing: {
@@ -37,6 +38,16 @@ module.exports = {
           },
           to: {
             transform: 'rotate(360deg)',
+          },
+        },
+        bounce: {
+          '0%, 100%': {
+            transform: 'translateY(-20%)',
+            animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)',
+          },
+          '50%': {
+            transform: 'translateY(0)',
+            animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
           },
         },
       },

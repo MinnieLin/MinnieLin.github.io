@@ -1,20 +1,80 @@
 import fs from 'fs'
 import path from 'path'
-import bibtexParse from 'bibtex-parse-js'
-import type { Publication } from '../types/publication'
+import { Publication } from '../types/publication'
 
-export function getPublications(): Publication[] {
-  const filePath = path.join(process.cwd(), 'publications.bib')
-  const bibFileContent = fs.readFileSync(filePath, 'utf8')
-  const parsedBib = bibtexParse.toJSON(bibFileContent)
+export async function getAllPublications(): Promise<Publication[]> {
+  const bibPath = path.join(
+    process.cwd(),
+    'content/publications/bibliography.bib'
+  )
+  const bibContent = await fs.promises.readFile(bibPath, 'utf8')
 
-  return parsedBib.map(entry => ({
-    id: entry.citationKey,
-    title: entry.entryTags.TITLE,
-    author: entry.entryTags.AUTHOR,
-    year: parseInt(entry.entryTags.YEAR, 10),
-    url: entry.entryTags.URL,
-    category: entry.entryTags.abbr,
-    tags: entry.entryTags.tags ? entry.entryTags.tags.split(',') : [],
-  }))
+  return parseBibTeX(bibContent)
+}
+
+function parseBibTeX(content: string): Publication[] {
+  const entries: Publication[] = []
+  const entryRegex = /@(\w+)\s*\{([^,]*),([^@]*)\}/g
+  const fieldRegex = /(\w+)\s*=\s*\{([^}]*)\}/g
+
+  let match
+  while ((match = entryRegex.exec(content)) !== null) {
+    const [_, type, citationKey, fields] = match
+
+    if (
+      type.toLowerCase() === 'article' ||
+      type.toLowerCase() === 'inproceedings'
+    ) {
+      const publication: Partial<Publication> = {}
+      let fieldMatch
+
+      while ((fieldMatch = fieldRegex.exec(fields)) !== null) {
+        const [__, fieldName, fieldValue] = fieldMatch
+        const name = fieldName.toLowerCase()
+
+        switch (name) {
+          case 'title':
+            publication.title = fieldValue.trim()
+            break
+          case 'author':
+            publication.authors = fieldValue
+              .split(' and ')
+              .map(author => author.trim())
+              .map(author => author.split(',').reverse().join(' ').trim())
+            break
+          case 'year':
+            publication.year = parseInt(fieldValue)
+            break
+          case 'booktitle':
+          case 'journal':
+            publication.venue = fieldValue.trim()
+            break
+          case 'url':
+            publication.url = fieldValue.trim()
+            break
+          case 'pdf':
+            publication.pdf = fieldValue.trim()
+            break
+          case 'abstract':
+            publication.abstract = fieldValue.trim()
+            break
+          case 'doi':
+            publication.doi = fieldValue.trim()
+            break
+          case 'abbr':
+            publication.abbr = fieldValue.trim()
+            break
+          case 'selected':
+            publication.selected = fieldValue.toLowerCase() === 'true'
+            break
+        }
+      }
+
+      if (publication.title && publication.authors && publication.year) {
+        entries.push(publication as Publication)
+      }
+    }
+  }
+
+  return entries.sort((a, b) => b.year - a.year)
 }

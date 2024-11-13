@@ -14,20 +14,20 @@ const routes = [
     exact: true,
   },
   {
-    path: '/blog',
-    label: 'BLOG',
-  },
-  {
-    path: '/projects',
-    label: 'PROJECTS',
-  },
-  {
     path: '/about',
     label: 'ABOUT',
   },
   {
     path: '/publications',
     label: 'PUBLICATIONS',
+  },
+  {
+    path: '/blog',
+    label: 'BLOG',
+  },
+  {
+    path: '/projects',
+    label: 'PROJECTS',
   },
 ]
 

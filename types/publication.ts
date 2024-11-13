@@ -1,9 +1,12 @@
-export interface Publication {
-  id: string
+export type Publication = {
   title: string
-  author: string
+  authors: string[]
   year: number
-  url: string
-  category: string
-  tags?: string[]
+  venue: string
+  url?: string
+  pdf?: string
+  abstract?: string
+  doi?: string
+  abbr?: string
+  selected?: boolean
 }

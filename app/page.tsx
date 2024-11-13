@@ -12,8 +12,9 @@ import {
   News24,
   Papers24,
 } from '../components/icons'
-import PostList from '../components/postList'
+import PostList from 'components/postList'
 import NewsList from 'components/newsList'
+import PublicationList from 'components/publicationList'
 import Introduction from '../components/introduction'
 import avatar from '../public/images/profile-img.jpg'
 import { components as mdx } from '../components/mdxComponents'
@@ -142,7 +143,7 @@ export default async function Page() {
           Publications
         </span>
       </div>
-      <PostList />
+      <PublicationList selectedOnly={true} />
       {/* Blogs  */}
       <div className="flex items-center mt-16 space-x-3">
         <span className="p-3 rounded-full bg-back-subtle">

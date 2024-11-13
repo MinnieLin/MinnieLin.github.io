@@ -54,12 +54,14 @@ export function Contact() {
         <div className="flex justify-center mt-6">
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-1 text-md font-medium text-accent hover:text-accent/80 transition-colors"
+            className="flex items-center gap-1 text-md font-medium group"
             aria-label="Scroll to top"
           >
-            <Top24 />
-            <span className="text-lg">Back to top</span>
-            <Top24 />
+            <Top24 className="animate-bounce-slow mt-2" />
+            <span className="text-lg text-fore-subtle hover:text-accent transition-colors">
+              Back to top
+            </span>
+            <Top24 className="animate-bounce-slow mt-2" />
           </button>
         </div>
       </div>

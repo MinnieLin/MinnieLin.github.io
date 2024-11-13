@@ -17,20 +17,20 @@ const routes = [
     exact: true,
   },
   {
-    path: '/blog',
-    label: 'BLOG',
-  },
-  {
-    path: '/projects',
-    label: 'PROJECTS',
-  },
-  {
     path: '/about',
     label: 'ABOUT',
   },
   {
     path: '/publications',
     label: 'PUBLICATIONS',
+  },
+  {
+    path: '/blog',
+    label: 'BLOG',
+  },
+  {
+    path: '/projects',
+    label: 'PROJECTS',
   },
 ]
 
@@ -50,7 +50,7 @@ export function Footer() {
   return (
     <footer className="relative w-full h-36 overflow-hidden bg-back-secondary text-secondary">
       <div className="container h-full px-5 pt-8 pb-8 m-auto max-w-screen-xl md:px-20">
-        <div className="container flex-col justify-between md:space-y-8">
+        <div className="container flex-col justify-between md:space-y-4">
           <nav className="flex-row items-center justify-center hidden space-x-6 text-sm lg:flex md:justify-end">
             {routes.map(route => (
               <NavLink key={route.path} to={route.path} title={route.label}>

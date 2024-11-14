@@ -128,6 +128,8 @@ export default async function Page() {
           <div className="mx-1 mt-2 flex items-center justify-center">
             <Link
               href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/asonjay/asonjay.github.io/master/public/cv/Zexin_Xu_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative flex items-center space-x-2 rounded-lg bg-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:scale-125 hover:-translate-y-0"
             >
               <span className="text-xs text-fore-subtle transition-colors duration-300 group-hover:text-accent">

@@ -1,33 +1,17 @@
-# [jeffjadulco.com](https://jeffjadulco.com)
+# [asonjay.github.io](https://asonjay.github.io)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-![Twitter Follow](https://img.shields.io/twitter/follow/jeffjadulco?style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/zexin_jason_xu?style=social)
 
-My personal website running on [Next.js](https://nextjs.org/)
+Welcome! I'm Jason, a PhD student in Computer Science at The University of Texas at Dallas, focusing on LLM, attack/defense and educational technology. This is my **third** iteration of my personal website, built with [Next.js](https://nextjs.org/).
 
-## Built using
+The design of this site draws inspiration from the amazing work of [Jeff Jadulco](https://jeffjadulco.com/) and [Victor Dibia](https://victordibia.com/). Their thoughtful design approaches have influenced how I present my work and research here.
 
-- [Next.js + Typescript](https://nextjs.org/)
-- [MDX using `mdx-bundler`](https://github.com/kentcdodds/mdx-bundler/)
-- [Tailwind CSS](https://tailwindcss.com/)
-
-## Development
-
-```bash
-git clone https://github.com/jeffjadulco/jeffjadulco.com.git
-cd jeffjadulco.com
-npm install
-npm run dev
-```
-
-## Configuration
-
-- MDX - located in `content/blog`
-- Analytics - I'm using [GoatCounter](https://www.goatcounter.com/). If you want to remove or replace it, remove/replace the `goat-counter` script in`_document.tsx` and `useAnalytics`.
+I use this space to share my research, projects, and thoughts on anything I found interesting. Feel free to explore my publications, projects, and blog posts to learn more about my work.
 
 ## Old version
 
-I initially made this website using Gatsby, here's the tagged version for the last commit before migrating to Next.js: [v1.3](https://github.com/jeffjadulco/jeffjadulco.com/tree/v1.3)
+My old version is built with [al-folio](https://github.com/alshedivat/al-folio), you can find it [here](https://github.com/Asonjay/al_folio_deprecated).
 
 ## License
 

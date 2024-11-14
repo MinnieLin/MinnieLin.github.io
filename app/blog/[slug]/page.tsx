@@ -3,21 +3,15 @@ import { format, parseISO } from 'date-fns'
 import { getMDXComponent } from 'mdx-bundler/client'
 import { Metadata } from 'next'
 import { Fragment } from 'react'
-import { Feedback } from '../../../components/feedback'
 import { components } from '../../../components/mdxComponents'
 import { QuickNav } from '../../../components/quickNav'
 import { getAllFrontMatters, getMdxBySlug } from '../../../lib/mdx'
 
-async function generateStaticParams() {
+export async function generateStaticParams() {
   const posts = await getAllFrontMatters()
-  return {
-    paths: posts.map(post => ({
-      params: {
-        slug: post.slug,
-      },
-    })),
-    fallback: false,
-  }
+  return posts.map(post => ({
+    slug: post.slug
+  }))
 }
 export async function generateMetadata({ params }): Promise<Metadata> {
   const { frontmatter } = await getMdxBySlug(params.slug)

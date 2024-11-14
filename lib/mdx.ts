@@ -94,7 +94,6 @@ async function getAllNews() {
 
 async function getProjects(): Promise<Project[]> {
   const paths = await globby([`${PROJECTS_PATH}/**/*.mdx`])
-  console.log('Found paths:', paths) // Debug: check found paths
 
   const projects = await Promise.all(
     paths.map(async filePath => {

@@ -79,14 +79,6 @@ interface Props {
 const ProjectList = async ({ selectedOnly = false }: Props) => {
   try {
     const projects = await getProjects()
-    console.log(
-      'ProjectList received projects:',
-      projects.map(p => ({
-        title: p.title,
-        selected: p.selected,
-      }))
-    )
-    console.log('selectedOnly:', selectedOnly)
 
     if (!projects || projects.length === 0) {
       return (
@@ -98,15 +90,9 @@ const ProjectList = async ({ selectedOnly = false }: Props) => {
 
     const filteredProjects = selectedOnly
       ? projects.filter(p => {
-          console.log(`Filtering ${p.title}: selected = ${p.selected}`)
           return p.selected === true
         })
       : projects
-
-    console.log(
-      'Filtered projects:',
-      filteredProjects.map(p => p.title)
-    )
 
     return (
       <section className="mb-6 mt-6">

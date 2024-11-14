@@ -9,6 +9,7 @@ const nextConfig = {
   experimental: {
     mdxRs: true,
   },
+  basePath: '',
 }
 
 module.exports = nextConfig

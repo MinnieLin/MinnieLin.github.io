@@ -21,6 +21,7 @@ import Introduction from '../components/introduction'
 import avatar from '../public/images/profile-img.jpg'
 import { components as mdx } from '../components/mdxComponents'
 import { wenKai } from './fonts'
+import { Download } from 'lucide-react'
 
 export default async function Page() {
   return (
@@ -123,6 +124,18 @@ export default async function Page() {
                 </a>
               </span>
             </div>
+          </div>
+          {/* CV  */}
+          <div className="mx-1 mt-2 flex items-center justify-center">
+            <Link
+              href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/asonjay/asonjay.github.io/master/public/cv/Zexin_Xu_CV.pdf"
+              className="group relative flex items-center space-x-2 rounded-lg bg-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:scale-110"
+            >
+              <span className="text-xs text-fore-subtle transition-colors duration-300 group-hover:text-accent">
+                CV (Last Updated: 11/15/2023)
+              </span>
+              <div className="absolute inset-0 -z-10 rounded-lg bg-gradient-to-r from-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:from-accent/5 group-hover:to-transparent group-hover:opacity-100" />
+            </Link>
           </div>
         </div>
       </div>

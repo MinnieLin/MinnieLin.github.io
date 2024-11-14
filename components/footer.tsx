@@ -35,31 +35,29 @@ export function Footer() {
               </NavLink>
             ))}
           </nav>
-          <div className="flex flex-col-reverse space-y-8 space-y-reverse md:flex-row md:justify-between md:space-y-0">
-            <span
-              className="self-center text-xs tracking-wider md:self-end"
-              aria-label="Copyright"
-            >
-              Built with{' '}
-              <a className="underline" href="https://nextjs.org/">
-                Next.js
-              </a>{' '}
-              and{' '}
-              <a className="underline" href="https://pages.github.com/">
-                Github Pages
-              </a>
-              . Inspired by{' '}
-              <a className="underline" href="https://jeffjadulco.com/">
-                Jeff Jadulco
-              </a>{' '}
-              and{' '}
-              <a className="underline" href="https://victordibia.com/">
-                Victor Dibia
-              </a>
-              . <br />© 2024 - present. Zexin (Jason) Xu. All Rights Reserved.
-              Last updated: {lastUpdated}
-            </span>
-            <div className="flex flex-row items-center justify-center space-x-6 md:justify-end">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-end">
+            <div className="text-xs tracking-wider md:max-w-[70%] order-2 md:order-1">
+              <div className="hidden md:block">
+                Built with{' '}
+                <a className="underline" href="https://nextjs.org/">
+                  Next.js
+                </a>
+                . Inspired by{' '}
+                <a className="underline" href="https://jeffjadulco.com/">
+                  Jeff Jadulco
+                </a>{' '}
+                and{' '}
+                <a className="underline" href="https://victordibia.com/">
+                  Victor Dibia
+                </a>
+                .
+              </div>
+              <div>
+                © 2024 - present. Zexin (Jason) Xu. All Rights Reserved. Last
+                updated: {lastUpdated}
+              </div>
+            </div>
+            <div className="flex flex-row items-center justify-center space-x-6 md:justify-end order-1 md:order-2">
               <span>
                 <a
                   href="mailto:zexin.xu@utdallas.edu"

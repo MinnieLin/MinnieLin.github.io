@@ -21,7 +21,7 @@ export function Header() {
           aria-label="Website logo, go back to homepage."
           className="flex items-center border-white group"
         >
-          <div>
+          <div className="flex items-center">
             <div className="overflow-hidden transition-transform ease-in-out border-3 rounded-full w-9 h-9 group-hover:-translate-y-1">
               <Image
                 src={JJIcon}

@@ -9,9 +9,10 @@ export const routes = [
   //   label: 'ABOUT',
   // },
   {
-    path: '/cv/Zexin_Xu_CV.pdf',
+    path: 'https://raw.githubusercontent.com/asonjay/asonjay.github.io/master/public/cv/Zexin_Xu_CV.pdf',
     label: 'CV',
-  },
+    target: '_blank' 
+}
   {
     path: '/publications',
     label: 'PUBLICATIONS',

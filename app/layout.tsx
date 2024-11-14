@@ -24,21 +24,21 @@ export const metadata: Metadata = {
     template: '%s | Jason Xu',
   },
   description: 'PhD Student at UTD',
-  openGraph: {
-    title: 'Zexin (Jason) Xu',
-    description: 'PhD Student at UTD',
-    url: 'https://asonjay.github.io',
-    siteName: 'Zexin (Jason) Xu',
-    images: [
-      {
-        url: 'https://asonjay.github.io/static/og/default.png',
-        width: 1280,
-        height: 675,
-      },
-    ],
-    locale: 'en-US',
-    type: 'website',
-  },
+  // openGraph: {
+  //   title: 'Zexin (Jason) Xu',
+  //   description: 'PhD Student at UTD',
+  //   url: 'https://asonjay.github.io',
+  //   siteName: 'Zexin (Jason) Xu',
+  //   images: [
+  //     {
+  //       url: 'https://asonjay.github.io/static/og/default.png',
+  //       width: 1280,
+  //       height: 675,
+  //     },
+  //   ],
+  //   locale: 'en-US',
+  //   type: 'website',
+  // },
   robots: {
     index: true,
     follow: true,

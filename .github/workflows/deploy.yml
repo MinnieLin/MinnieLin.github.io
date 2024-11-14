@@ -31,15 +31,6 @@ jobs:
       - name: Create .nojekyll file
         run: touch out/.nojekyll
         
-      # Add these steps for PDF handling
-      - name: Copy PDF files
-        run: |
-          mkdir -p out/cv
-          cp public/cv/*.pdf out/cv/
-          # Set correct content type for PDFs
-          find out/cv -name "*.pdf" -exec sh -c 'echo "Content-Type: application/pdf" > "{}.headers"' \;
-          find out/cv -name "*.pdf" -exec sh -c 'echo "Content-Disposition: inline" >> "{}.headers"' \;
-        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:

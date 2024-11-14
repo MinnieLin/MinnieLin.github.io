@@ -10,23 +10,6 @@ const nextConfig = {
     mdxRs: true,
   },
   basePath: '',
-  async headers() {
-    return [
-      {
-        source: '/cv/:path*',
-        headers: [
-          {
-            key: 'Content-Type',
-            value: 'application/pdf'
-          },
-          {
-            key: 'Content-Disposition',
-            value: 'inline'
-          }
-        ],
-      },
-    ]
-  }
 }
 
 module.exports = nextConfig

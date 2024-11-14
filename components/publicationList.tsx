@@ -63,8 +63,8 @@ export function PublicationList({
                 {groupedPubs[year].map((pub, index) => (
                   <li key={index} className="group list-none">
                     <div>
-                      <div className="flex items-start gap-8 ">
-                        <span className="text-lg font-semibold group-hover:text-accent">
+                      <div className="flex items-start gap-8 mb-1">
+                        <span className="text-lg font-semibold group-hover:text-accent leading-tight">
                           {pub.title}
                         </span>
                       </div>

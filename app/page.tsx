@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link'
 import { Blob } from '../components/atoms'
-import { Contact } from '../components/contact'
 import {
   MailAt24,
   GitHub24,
@@ -11,13 +11,14 @@ import {
   LinkedIn24,
   News24,
   Papers24,
+  Project24,
 } from '../components/icons'
 import PostList from 'components/postList'
 import NewsList from 'components/newsList'
 import PublicationList from 'components/publicationList'
+import ProjectList from 'components/projectList'
 import Introduction from '../components/introduction'
 import avatar from '../public/images/profile-img.jpg'
-import Link from 'next/link'
 import { components as mdx } from '../components/mdxComponents'
 import { wenKai } from './fonts'
 
@@ -32,7 +33,7 @@ export default async function Page() {
             <span className={wenKai.className}>徐泽鑫</span>
             )! 👋
           </p>
-          <div className="text-sm mb-4">
+          <div className="text-xs mb-4">
             <mdx.code showLineNumbers={false} fileName={''} id="">
               💡 My name is pronounced as "Zeh-Shin She", and I also go by{' '}
               <b>Jason</b>.
@@ -126,7 +127,7 @@ export default async function Page() {
         </div>
       </div>
       {/* News  */}
-      <div className="flex items-center mt-20 space-x-3">
+      <div className="flex items-center mt-16 space-x-3">
         <span className="p-3 rounded-full bg-back-subtle">
           <News24 />
         </span>
@@ -136,12 +137,12 @@ export default async function Page() {
       </div>
       <NewsList />
       {/* Publications */}
-      <div className="flex items-center mt-20 space-x-3">
+      <div className="flex items-center mt-16 space-x-3">
         <span className="p-3 rounded-full bg-back-subtle">
           <Papers24 />
         </span>
         <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent">
-          Selected Publications
+          Publications
         </span>
       </div>
       <PublicationList selectedOnly={true} />
@@ -156,13 +157,34 @@ export default async function Page() {
           <span>→</span>
         </Link>
       </div>
+      {/* ProjectList */}
+      <div className="flex items-center mt-16 space-x-3">
+        <span className="p-3 rounded-full bg-back-subtle">
+          <Project24 />
+        </span>
+        <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent">
+          Selected Projects
+        </span>
+      </div>
+      <ProjectList selectedOnly={true} />
+      <div className="mx-1 mt-6 flex justify-left items-center">
+        <Link
+          href="/projects"
+          className="flex items-center space-x-2 text-fore-subtle hover:text-accent transition-transform ease-in-out hover:translate-x-1"
+        >
+          <span className="text-xs uppercase tracking-[.2em]">
+            All Projects
+          </span>
+          <span>→</span>
+        </Link>
+      </div>
       {/* Blogs  */}
-      <div className="flex items-center mt-20 space-x-3">
+      <div className="flex items-center mt-16 space-x-3">
         <span className="p-3 rounded-full bg-back-subtle">
           <Blog24 />
         </span>
         <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent">
-          Recent Blog Posts
+          Blogs
         </span>
       </div>
       <PostList />

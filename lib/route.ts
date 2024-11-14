@@ -9,6 +9,10 @@ export const routes = [
   //   label: 'ABOUT',
   // },
   {
+    path: '/cv/Zexin_Xu_CV.pdf',
+    label: 'CV',
+  },
+  {
     path: '/publications',
     label: 'PUBLICATIONS',
   },
@@ -20,8 +24,8 @@ export const routes = [
     path: '/blog',
     label: 'BLOG',
   },
-  {
-    path: '/moments',
-    label: 'MOMENTS',
-  },
+  // {
+  //   path: '/moments',
+  //   label: 'MOMENTS',
+  // },
 ]

@@ -1,4 +1,4 @@
-import lxgwWenKaiTC from '@next/font/local'
+import lxgwWenKaiTC from "next/font/local"
 
 const lxgwFont = lxgwWenKaiTC({
   src: [

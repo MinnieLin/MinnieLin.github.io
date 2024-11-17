@@ -1,7 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react'
 import { routes } from '../lib/route'
-
 import { NavLink } from './atoms'
 import {
   GitHub24,
@@ -11,19 +9,14 @@ import {
   LinkedIn24,
 } from './icons'
 
+// Create a new constant that will be set at build time
+const buildDate = new Date().toLocaleDateString('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+})
+
 export function Footer() {
-  const [lastUpdated, setLastUpdated] = useState('')
-
-  useEffect(() => {
-    setLastUpdated(
-      new Date().toLocaleDateString('en-US', {
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric',
-      })
-    )
-  }, [])
-
   return (
     <footer className="relative w-full h-28 overflow-hidden bg-back-secondary text-secondary">
       <div className="container h-full px-5 pt-8 m-auto max-w-screen-xl md:px-20">
@@ -54,7 +47,7 @@ export function Footer() {
               </div>
               <div>
                 © 2024 - present. Zexin (Jason) Xu. All Rights Reserved. Last
-                updated: {lastUpdated}
+                updated: {buildDate}
               </div>
             </div>
             <div className="flex flex-row items-center justify-center space-x-6 md:justify-end order-1 md:order-2">

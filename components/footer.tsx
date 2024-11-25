@@ -10,11 +10,13 @@ import {
 } from './icons'
 
 // Create a new constant that will be set at build time
-const buildDate = new Date().toLocaleDateString('en-US', {
-  month: 'long',
-  day: 'numeric',
-  year: 'numeric',
-})
+const buildDate =
+  process.env.NEXT_PUBLIC_BUILD_DATE ||
+  new Date().toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  })
 
 export function Footer() {
   return (
@@ -47,7 +49,7 @@ export function Footer() {
               </div>
               <div>
                 © 2024 - present. Zexin (Jason) Xu. All Rights Reserved. Last
-                updated: November 13, 2024.
+                updated: {buildDate}.
               </div>
             </div>
             <div className="flex flex-row items-center justify-center space-x-6 md:justify-end order-1 md:order-2">

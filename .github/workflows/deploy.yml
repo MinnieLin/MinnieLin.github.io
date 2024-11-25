@@ -15,22 +15,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
+      - name: Set build date from last commit
+        run: |
+          echo "NEXT_PUBLIC_BUILD_DATE=$(git log -1 --format=%cd --date=format:'%B %-d, %Y')" >> $GITHUB_ENV
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: npm
-          
+
       - name: Install dependencies
         run: npm ci
-        
+
       - name: Build with Next.js
+        env:
+          NEXT_PUBLIC_BUILD_DATE: ${{ env.NEXT_PUBLIC_BUILD_DATE }}
         run: npm run build
-        
+
       - name: Create .nojekyll file
         run: touch out/.nojekyll
-        
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:

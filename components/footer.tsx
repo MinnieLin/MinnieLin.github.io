@@ -47,7 +47,7 @@ export function Footer() {
               </div>
               <div>
                 © 2024 - present. Zexin (Jason) Xu. All Rights Reserved. Last
-                updated: {buildDate}
+                updated: November 13, 2024.
               </div>
             </div>
             <div className="flex flex-row items-center justify-center space-x-6 md:justify-end order-1 md:order-2">

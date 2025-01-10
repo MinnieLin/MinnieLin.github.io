@@ -23,7 +23,8 @@ function parseBibTeX(content: string): Publication[] {
 
     if (
       type.toLowerCase() === 'article' ||
-      type.toLowerCase() === 'inproceedings'
+      type.toLowerCase() === 'inproceedings' ||
+      type.toLowerCase() === 'misc'
     ) {
       const publication: Partial<Publication> = {}
       let fieldMatch

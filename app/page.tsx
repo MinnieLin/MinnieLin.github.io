@@ -156,7 +156,7 @@ export default async function Page() {
           <Papers24 />
         </span>
         <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent">
-          Publications
+          Selected Publications
         </span>
       </div>
       <PublicationList selectedOnly={true} />

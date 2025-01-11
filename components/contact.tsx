@@ -41,11 +41,11 @@ export function Contact() {
           Feel free to email me about anything. I am happy to chat and discuss
           potential collaborations!
         </p>
-        <script
+        {/* <script
           type="text/javascript"
           id="clstr_globe"
           src="//clustrmaps.com/globe.js?d=zs9DWuttPHf4Vx0N4W8aSfy9VR-bDC44GUKCEWvhVrE"
-        ></script>
+        ></script> */}
         {/* <p className="text-md px-4 mt-1 text-center text-fore-secondary">
           You can also reach me around the web:{' '}
           <ExtLink link="https://github.com/asonjay">GitHub</ExtLink>,{' '}

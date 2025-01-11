@@ -48,6 +48,7 @@ function parseBibTeX(content: string): Publication[] {
             break
           case 'booktitle':
           case 'journal':
+          case 'archivePrefix':
             publication.venue = fieldValue.trim()
             break
           case 'url':

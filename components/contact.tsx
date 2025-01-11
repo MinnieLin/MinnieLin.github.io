@@ -41,9 +41,11 @@ export function Contact() {
           Feel free to email me about anything. I am happy to chat and discuss
           potential collaborations!
         </p>
-        {/* <a href="https://clustrmaps.com/site/1c3s4" title="Visit tracker">
-          <img src="//clustrmaps.com/map_v2.png?cl=ffffff&w=300&t=n&d=zs9DWuttPHf4Vx0N4W8aSfy9VR-bDC44GUKCEWvhVrE&co=2d78ad&ct=ffffff" />
-        </a> */}
+        <script
+          type="text/javascript"
+          id="clstr_globe"
+          src="//clustrmaps.com/globe.js?d=zs9DWuttPHf4Vx0N4W8aSfy9VR-bDC44GUKCEWvhVrE"
+        ></script>
         {/* <p className="text-md px-4 mt-1 text-center text-fore-secondary">
           You can also reach me around the web:{' '}
           <ExtLink link="https://github.com/asonjay">GitHub</ExtLink>,{' '}

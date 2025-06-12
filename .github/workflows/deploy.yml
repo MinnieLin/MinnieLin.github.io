@@ -38,13 +38,12 @@ jobs:
         run: touch out/.nojekyll
 
       - name: Check for symlinks
-            run: |
-              du -sh out
-              find out -type l
+        run: |
+          du -sh out
+          find out -type l
 
       - name: Remove symlinks
         run: find out -type l -delete
-
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4

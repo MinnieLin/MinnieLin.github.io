@@ -22,6 +22,7 @@ module.exports = {
           subtle: 'var(--color-back-subtle)',
           accent: 'var(--color-back-accent)',
         },
+        'blob-accent': '#93989c',
       },
       fontFamily: {
         sans: [

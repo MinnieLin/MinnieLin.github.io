@@ -76,7 +76,7 @@ export const Blob = () => {
     <div aria-hidden="true">
       <div className="relative h-48 blob md:h-56 lg:h-64">
         <svg
-          className="h-full fill-current animate-blob-spin text-back-accent"
+          className="h-full fill-current animate-blob-breathe text-back-accent"
           viewBox="0 0 278 279"
           xmlns="http://www.w3.org/2000/svg"
         >

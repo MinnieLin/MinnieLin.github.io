@@ -110,3 +110,29 @@
     /*background-color: aqua;*/
   }
 }
+
+/* Darker shadow effect for avatar */
+.avatar-shadow {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25), 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* Alternative: Softer shadow */
+.avatar-shadow-soft {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Alternative: More pronounced shadow */
+.avatar-shadow-bold {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Alternative: Colored shadow using accent color */
+.avatar-shadow-colored {
+  box-shadow: 0 6px 12px rgba(147, 152, 156, 0.2),
+    0 3px 6px rgba(147, 152, 156, 0.1);
+}
+
+/* White border with subtle shadow */
+.avatar-white-border {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25), 0 2px 5px rgba(0, 0, 0, 0.15);
+}

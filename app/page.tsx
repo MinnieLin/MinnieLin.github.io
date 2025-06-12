@@ -18,7 +18,7 @@ import NewsList from 'components/newsList'
 import PublicationList from 'components/publicationList'
 import ProjectList from 'components/projectList'
 import Introduction from '../components/introduction'
-import avatar from '../public/images/profile-img.jpg'
+import avatar from '../public/images/profile-img.jpeg'
 import { components as mdx } from '../components/mdxComponents'
 import { wenKai } from './fonts'
 

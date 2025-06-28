@@ -13,6 +13,17 @@ export function Contact() {
 
   return (
     <div className="mt-32 full-width-container bg-back-secondary">
+      {/* Gradient overlay - full width */}
+      <div className="w-full">
+        <div
+          className="h-16 pointer-events-none noise-bg"
+          style={{
+            background:
+              'linear-gradient(to bottom, var(--color-back-primary), var(--color-back-secondary))',
+          }}
+        ></div>
+      </div>
+
       <div className="container max-w-screen-lg pt-8 mx-auto">
         {/* <h1 className="text-3xl font-semibold text-center">
           Get in touch{' '}

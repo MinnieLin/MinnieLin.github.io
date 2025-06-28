@@ -23,22 +23,29 @@ export async function NewsList({
             const Content = getMDXComponent(item.code)
             return (
               <li key={item.slug} className="border-b border-back-subtle mx-8">
-                {' '}
-                {/* Moved border here and added mx-8 */}
-                <div className="flex flex-row justify-between items-center py-2">
+                <div className="flex flex-row justify-between items-center px-8 py-2 transition-colors ease-in-out -mx-7 group hover:bg-back-secondary focus:bg-back-secondary focus:text-accent">
                   <div className="text-sm font-medium pr-4 flex-1 min-w-0">
                     <div className="my-0">
                       <Content
                         components={{
                           ...components,
                           p: props => (
-                            <p {...props} className="my-0 hover:text-accent" />
+                            <p
+                              {...props}
+                              className="my-0 group-hover:text-accent"
+                            />
+                          ),
+                          a: props => (
+                            <a
+                              {...props}
+                              className="text-accent group-hover:underline"
+                            />
                           ),
                         }}
                       />
                     </div>
                   </div>
-                  <div className="text-sm text-fore-subtle whitespace-nowrap">
+                  <div className="text-sm text-fore-subtle whitespace-nowrap group-hover:text-accent">
                     {format(
                       parseISO(item.frontmatter.publishedAt),
                       'MMM dd, yyyy'
@@ -54,5 +61,4 @@ export async function NewsList({
   )
 }
 
-// TODO: This is just a workaround. See https://github.com/vercel/next.js/issues/42292
 export default (NewsList as unknown) as (props: Props) => JSX.Element

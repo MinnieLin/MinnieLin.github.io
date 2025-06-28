@@ -41,7 +41,9 @@ export function PublicationList({
         <React.Fragment key={index}>
           {index > 0 && ', '}
           {isMe ? (
-            <span className="underline font-bold">{author}</span>
+            <span className="underline font-bold hover:text-accent transition-colors">
+              {author}
+            </span>
           ) : (
             <span>{author}</span>
           )}
@@ -57,33 +59,33 @@ export function PublicationList({
           <div key={year}>
             {yearIndex !== 0 && <hr className="border-back-subtle my-6" />}
             <div className="grid grid-cols-[1fr_80px] gap-8">
-              {' '}
-              {/* Swapped the column widths */}
-              <div className="border-back-subtle space-y-8">
+              <div className="border-back-subtle space-y-8 pb-4">
                 {groupedPubs[year].map((pub, index) => (
                   <li key={index} className="group list-none">
-                    <div>
+                    <div className="border-b border-back-subtle/50 pb-2 last:border-b-0 hover:bg-back-subtle/20 hover:scale-[1.01] transition-all duration-200 rounded-lg p-4 -m-4">
                       <div className="flex items-start gap-8 mb-1">
-                        <span className="text-lg font-semibold group-hover:text-accent leading-tight">
+                        <span className="text-lg font-semibold group-hover:text-accent leading-tight block cursor-default transition-colors">
                           {pub.title}
                         </span>
                       </div>
-                      <p className="text-sm text-fore-subtle">
-                        {formatAuthors(pub.authors)}
-                      </p>
-                      <p className="text-sm italic text-fore-subtle">
-                        {pub.venue}
-                      </p>
-                      <div className="mt-1 space-x-4">
+                      <div className="space-y-1 mb-2">
+                        <p className="text-sm text-fore-subtle">
+                          {formatAuthors(pub.authors)}
+                        </p>
+                        <p className="text-sm italic text-fore-subtle font-medium">
+                          {pub.venue}
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-3 mt-1">
                         {pub.abbr && (
-                          <span className="inline-block px-2 py-1 text-xs border border-accent font-medium bg-accent text-white rounded">
+                          <span className="inline-flex items-center px-3 py-1 text-xs font-semibold bg-gradient-to-r from-accent to-teal-600 text-white rounded-full shadow-sm">
                             {pub.abbr}
                           </span>
                         )}
                         {pub.pdf && (
                           <Link
                             href={pub.pdf}
-                            className="inline-block px-2 py-1 text-xs border border-accent text-accent hover:bg-accent hover:text-white rounded transition-colors"
+                            className="inline-flex items-center px-3 py-1 text-xs border border-accent text-accent hover:bg-accent hover:text-white rounded-md transition-all hover:shadow-sm"
                             target="_blank"
                           >
                             PDF
@@ -92,7 +94,7 @@ export function PublicationList({
                         {pub.url && !pub.pdf && (
                           <Link
                             href={pub.url}
-                            className="inline-block px-3 py-1 text-sm border border-accent text-accent hover:bg-accent hover:text-white rounded transition-colors"
+                            className="inline-flex items-center px-3 py-1 text-sm border border-accent text-accent hover:bg-accent hover:text-white rounded-md transition-all hover:shadow-sm"
                             target="_blank"
                           >
                             PDF
@@ -103,9 +105,7 @@ export function PublicationList({
                   </li>
                 ))}
               </div>
-              <div className="text-3xl text-fore-subtle text-right opacity-20">
-                {' '}
-                {/* Added text-right */}
+              <div className="text-3xl text-fore-subtle text-right opacity-20 sticky top-4">
                 {year}
               </div>
             </div>

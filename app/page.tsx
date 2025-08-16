@@ -18,7 +18,7 @@ import NewsList from 'components/newsList'
 import PublicationList from 'components/publicationList'
 import ProjectList from 'components/projectList'
 import Introduction from '../components/introduction'
-import avatar from '../public/images/profile-img.jpg'
+import avatar from '../public/images/profile-img.jpeg'
 import { components as mdx } from '../components/mdxComponents'
 import { wenKai } from './fonts'
 
@@ -46,18 +46,23 @@ export default async function Page() {
         {/* Avatar  */}
         <div>
           <div className="relative">
-            <Blob />
-            <div className="absolute top-0 flex items-center justify-center w-full h-full">
-              <div className="w-32 h-32 overflow-hidden rounded-full md:h-40 md:w-40 lg:h-56 lg:w-56 pointer-events-none">
-                <Image
-                  src={avatar}
-                  alt="My avatar"
-                  width={256}
-                  height={256}
-                  quality={100}
-                  priority={true}
-                  placeholder="blur"
-                />
+            {/* <Blob /> */}
+            <div className="flex items-center justify-center">
+              <div className="relative">
+                {/* White border with shadow */}
+                <div className="w-36 h-36 md:w-44 md:h-44 lg:w-60 lg:h-60 bg-white rounded-full avatar-white-border"></div>
+                {/* Avatar image */}
+                <div className="absolute inset-1 w-34 h-34 overflow-hidden rounded-full md:h-42 md:w-42 lg:h-58 lg:w-58 pointer-events-none">
+                  <Image
+                    src={avatar}
+                    alt="My avatar"
+                    width={256}
+                    height={256}
+                    quality={100}
+                    priority={true}
+                    placeholder="blur"
+                  />
+                </div>
               </div>
             </div>
           </div>

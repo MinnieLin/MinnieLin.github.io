@@ -21,7 +21,7 @@ const FontFiraCode = Fira_Code({
 export const metadata: Metadata = {
   metadataBase: new URL('https://asonjay.github.io'),
   title: {
-    default: 'Zexin (Jason) Xu | PhD Student at UTD',
+    default: 'Zexin (Jason) Xu',
     template: '%s | Jason Xu',
   },
   description: 'PhD Student at UTD',

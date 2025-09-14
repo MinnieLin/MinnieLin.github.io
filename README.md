@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ![Twitter Follow](https://img.shields.io/twitter/follow/zexin_jason_xu?style=social)
 
-Welcome! I'm Jason, a PhD student in Computer Science at The University of Texas at Dallas, focusing on LLM, attack/defense and educational technology. This is my **third** iteration of my personal website, built with [Next.js](https://nextjs.org/).
+Welcome! I'm Qiyang, a PhD student in Computer Science at The University of Texas at Dallas, focusing on LLM, attack/defense and educational technology. This is my **third** iteration of my personal website, built with [Next.js](https://nextjs.org/).
 
 The design of this site draws inspiration from the amazing work of [Jeff Jadulco](https://jeffjadulco.com/) and [Victor Dibia](https://victordibia.com/). Their thoughtful design approaches have influenced how I present my work and research here.
 

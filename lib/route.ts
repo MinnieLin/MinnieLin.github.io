@@ -20,10 +20,10 @@ export const routes = [
     path: '/projects',
     label: 'PROJECTS',
   },
-  {
-    path: '/blog',
-    label: 'BLOG',
-  },
+  // {
+  //   path: '/blog',
+  //   label: 'BLOG',
+  // },
   // {
   //   path: '/moments',
   //   label: 'MOMENTS',

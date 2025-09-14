@@ -81,18 +81,6 @@ export default async function Page() {
               </span>
               <span className="scale-125">
                 <a
-                  href="https://github.com/asonjay"
-                  aria-label="Visit GitHub profile"
-                  title="Visit GitHub profile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="focus:text-accent"
-                >
-                  <GitHub24 className="transition-transform ease-in-out hover:-translate-y-1 hover:text-accent" />
-                </a>
-              </span>
-              <span className="scale-125">
-                <a
                   href="https://x.com/zexin_jason_xu"
                   aria-label="Visit Twitter profile"
                   title="Visit Twitter profile"
@@ -198,7 +186,7 @@ export default async function Page() {
         </Link>
       </div>
       {/* Blogs  */}
-      <div className="flex items-center mt-16 space-x-3">
+      {/* <div className="flex items-center mt-16 space-x-3">
         <span className="p-3 rounded-full bg-back-subtle">
           <Blog24 />
         </span>
@@ -217,7 +205,7 @@ export default async function Page() {
           </span>
           <span>→</span>
         </Link>
-      </div>
+      </div> */}
       {/* <div className="flex items-center mt-32 mb-2 space-x-3">
         <span className="p-3 rounded-full bg-back-subtle">
           <Project24 />

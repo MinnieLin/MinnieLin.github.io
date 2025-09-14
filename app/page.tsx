@@ -29,7 +29,7 @@ export default async function Page() {
         {/* Introduction  */}
         <div>
           <p className="max-w-3xl mt-12 mb-2 text-3xl font-semibold lg:mt-0 sm:text-4xl sm:text-left md:text-left lg:text-left">
-            Hi there, I’m Zexin Xu (
+            Hi there, I’m Qiyang Lin
             <span className={wenKai.className}>徐泽鑫</span>
             )! 👋
           </p>

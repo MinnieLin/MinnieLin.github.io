@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://minnielin.github.io'),
   title: {
     default: 'Qiyang (Minnie) Lin',
-    template: '%s | Jason Xu',
+    template: '%s | Qiyang Lin',
   },
   description: 'PhD Student at MSU',
   // openGraph: {

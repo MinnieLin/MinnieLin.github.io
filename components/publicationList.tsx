@@ -36,7 +36,7 @@ export function PublicationList({
 
   const formatAuthors = (authors: string[]) => {
     return authors.map((author, index) => {
-      const isMe = author.includes('Zexin Xu')
+      const isMe = author.includes('Qiyang Lin')
       return (
         <React.Fragment key={index}>
           {index > 0 && ', '}

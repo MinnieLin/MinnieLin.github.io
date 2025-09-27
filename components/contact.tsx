@@ -35,7 +35,7 @@ export function Contact() {
         <div className="flex justify-center mx-auto">
           <Button
             className="px-8"
-            link="mailto:zexin.xu@utdallas.edu"
+            link="mailto:linqiyan@msu.edu"
             onClick={() => {
               trackCustomEvent({ eventName: 'click-contact' })
             }}

@@ -33,7 +33,7 @@ export function Header() {
             </div>
             <div className="inline ml-3 text-base font-semibold sm:hidden">
               <span className="group-hover:text-accent text-fore-subtle">
-                asonjay.github
+                minnielin.github
               </span>
               <span className="text-accent">.io</span>
             </div>

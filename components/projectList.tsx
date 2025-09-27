@@ -7,15 +7,15 @@ function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="relative flex flex-col justify-between w-full h-full px-6 py-5 group bg-back-secondary hover:bg-back-secondary">
       {/* Thumbnail Section */}
-      {/* {project.thumbnail && (
-        <div className="w-full h-32 mb-4 overflow-hidden rounded-lg">
+     {project.thumbnail && (
+        <div className="w-full h-40 mb-4 overflow-hidden rounded-md">
           <img
             src={project.thumbnail}
-            alt={project.title}
-            className="w-full h-full object-cover"
+            alt={`Thumbnail for ${project.title}`}
+            className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105"
           />
         </div>
-      )} */}
+      )} 
 
       {/* Title and Year Section */}
       <div className="flex justify-between items-start">

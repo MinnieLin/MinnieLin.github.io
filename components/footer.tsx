@@ -48,15 +48,15 @@ export function Footer() {
                 .
               </div>
               <div>
-                © 2024 - present. Zexin (Jason) Xu. All Rights Reserved. Last
+                © 2025 - present. Qiyang (Minnie) Lin. All Rights Reserved. Last
                 updated: {buildDate}.
               </div>
             </div>
             <div className="flex flex-row items-center justify-center space-x-6 md:justify-end order-1 md:order-2">
               <span>
                 <a
-                  href="mailto:zexin.xu@utdallas.edu"
-                  aria-label="Email zexin.xu@utdallas.edu"
+                  href="mailto:linqiyan@msu.edu"
+                  aria-label="Email linqiyan@msu.edu"
                   title="Email"
                   className="focus:text-accent"
                 >
@@ -65,7 +65,7 @@ export function Footer() {
               </span>
               <span>
                 <a
-                  href="https://github.com/asonjay"
+                  href="https://github.com/MinnieLin"
                   aria-label="Visit GitHub profile"
                   title="Visit GitHub profile"
                   target="_blank"
@@ -77,7 +77,7 @@ export function Footer() {
               </span>
               <span>
                 <a
-                  href="https://x.com/zexin_jason_xu"
+                  href="https://x.com/QiyangLin1"
                   aria-label="Visit Twitter profile"
                   title="Visit Twitter profile"
                   target="_blank"
@@ -89,7 +89,7 @@ export function Footer() {
               </span>
               <span>
                 <a
-                  href="https://scholar.google.com/citations?user=NvnoD1kAAAAJ&hl=en"
+                  href="https://scholar.google.com/citations?user=n2OJ_jIAAAAJ&hl=en"
                   aria-label="Visit Google Scholar Profile"
                   title="Visit Google Scholar Profile"
                   target="_blank"
@@ -101,7 +101,7 @@ export function Footer() {
               </span>
               <span>
                 <a
-                  href="https://www.linkedin.com/in/zexin-xu/"
+                  href="https://www.linkedin.com/in/qiyang-lin-minnie/"
                   aria-label="Visit LinkedIn Profile"
                   title="Visit LinkedIn Profile"
                   target="_blank"

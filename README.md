@@ -3,16 +3,21 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ![Twitter Follow](https://img.shields.io/twitter/follow/zexin_jason_xu?style=social)
 
-Welcome! I'm Qiyang, a PhD student in Computer Science at The University of Texas at Dallas, focusing on LLM, attack/defense and educational technology. This is my **third** iteration of my personal website, built with [Next.js](https://nextjs.org/).
 
-The design of this site draws inspiration from the amazing work of [Jeff Jadulco](https://jeffjadulco.com/) and [Victor Dibia](https://victordibia.com/). Their thoughtful design approaches have influenced how I present my work and research here.
 
-I use this space to share my research, projects, and thoughts on anything I found interesting. Feel free to explore my publications, projects, and blog posts to learn more about my work.
+## Reminder
 
-## Old version
+run `npm run dev` to start a local server, link is https://localhost:3000 or ctrl + left mouse click on the link
 
-My old version is built with [al-folio](https://github.com/alshedivat/al-folio), you can find it [here](https://github.com/Asonjay/al_folio_deprecated).
+use app/page.tsx to change main page layout, components/footer.tsx controls the footer content, need to change the link, components/contact.tsx also need to change content, other thant that it should be fine
 
-## License
+change teh content of app/publications/page.tsx, it is the top text content of the page.
 
-This project is open source and available under the [MIT License](LICENSE)
+for bibliography, it is called bibtex (when you to citation or stuff, you can choose to export the bibtex or ask gpt to convert it for you. and put in the publication.bib under the content folder we talked about.)
+
+use content/ to add your own news, publications, or projects (content/assets are useless for now) (for documents, use markdown format, since it is .mdx, you keep the header)
+
+lib/route.ts controls the header tag names
+
+after you make all the changes, commit -> push on github desktop
+

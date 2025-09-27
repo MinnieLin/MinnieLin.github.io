@@ -29,14 +29,13 @@ export default async function Page() {
         {/* Introduction  */}
         <div>
           <p className="max-w-3xl mt-12 mb-2 text-3xl font-semibold lg:mt-0 sm:text-4xl sm:text-left md:text-left lg:text-left">
-            Hi there, I’m Qiyang Lin
-            <span className={wenKai.className}>徐泽鑫</span>
-            )! 👋
+            Hi, I’m Qiyang Lin
+            <span className={wenKai.className} >(林祺阳</span>)! 
           </p>
           <div className="text-sm mb-4">
             <mdx.code showLineNumbers={false} fileName={''} id="">
-              💡 My name is pronounced as "Zeh-Shin She", and I also go by{' '}
-              <b>Jason</b>.
+              💡 My name is pronounced as "Chi-Yang Lin", and I also go by{' '}
+              <b>Minnie</b>.
             </mdx.code>
           </div>
           <div className="relative text-primary">
@@ -71,8 +70,8 @@ export default async function Page() {
             <div className="flex flex-row items-center space-x-5 justify-center">
               <span className="scale-125">
                 <a
-                  href="mailto:zexin.xu@utdallas.edu"
-                  aria-label="Email zexin.xu@utdallas.edu"
+                  href="mailto:linqiyan@msu.edu"
+                  aria-label="Email linqiyan@msu.edu"
                   title="Email"
                   className="focus:text-accent"
                 >
@@ -81,7 +80,7 @@ export default async function Page() {
               </span>
               <span className="scale-125">
                 <a
-                  href="https://x.com/zexin_jason_xu"
+                  href="https://x.com/QiyangLin1"
                   aria-label="Visit Twitter profile"
                   title="Visit Twitter profile"
                   target="_blank"
@@ -93,7 +92,7 @@ export default async function Page() {
               </span>
               <span className="scale-125">
                 <a
-                  href="https://scholar.google.com/citations?user=NvnoD1kAAAAJ&hl=en"
+                  href="https://scholar.google.com/citations?user=n2OJ_jIAAAAJ&hl=en"
                   aria-label="Visit Google Scholar Profile"
                   title="Visit Google Scholar Profile"
                   target="_blank"
@@ -105,7 +104,7 @@ export default async function Page() {
               </span>
               <span className="scale-125">
                 <a
-                  href="https://www.linkedin.com/in/zexin-xu/"
+                  href="https://www.linkedin.com/in/qiyang-lin-minnie/"
                   aria-label="Visit LinkedIn Profile"
                   title="Visit LinkedIn Profile"
                   target="_blank"
@@ -120,13 +119,13 @@ export default async function Page() {
           {/* CV  */}
           <div className="mx-1 mt-2 flex items-center justify-center">
             <Link
-              href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/asonjay/asonjay.github.io/master/public/cv/Zexin_Xu_CV.pdf"
+              href="https://drive.google.com/file/d/1dqvDvyfXSrcKADPe7AC_Tv70DCRf4GSN/view?usp=drive_link" 
               target="_blank"
               rel="noopener noreferrer"
               className="group relative flex items-center space-x-2 rounded-lg bg-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:scale-125 hover:-translate-y-0"
             >
               <span className="text-xs text-fore-subtle transition-colors duration-300 group-hover:text-accent">
-                CV (Last Updated: 11/15/2023)
+                CV (Last Updated: 09/25/2025)
               </span>
               <div className="absolute inset-0 -z-10 rounded-lg bg-gradient-to-r from-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:from-accent/5 group-hover:to-transparent group-hover:opacity-100" />
             </Link>

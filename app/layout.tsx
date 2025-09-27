@@ -19,12 +19,12 @@ const FontFiraCode = Fira_Code({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://asonjay.github.io'),
+  metadataBase: new URL('https://minnielin.github.io'),
   title: {
-    default: 'Zexin (Jason) Xu',
+    default: 'Qiyang (Minnie) Lin',
     template: '%s | Jason Xu',
   },
-  description: 'PhD Student at UTD',
+  description: 'PhD Student at MSU',
   // openGraph: {
   //   title: 'Zexin (Jason) Xu',
   //   description: 'PhD Student at UTD',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     creator: '@',
-    title: 'Jason Xu',
+    title: 'Qiyang Lin',
     card: 'summary_large_image',
   },
   icons: {

@@ -169,7 +169,7 @@ export default async function Page() {
           <Project24 />
         </span>
         <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent">
-          Selected Projects
+          Game Projects
         </span>
       </div>
       <ProjectList selectedOnly={true} />

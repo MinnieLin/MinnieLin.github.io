@@ -15,6 +15,9 @@ export default async function Projects() {
         <Project24 />
       </span>
       <h1 className="mt-3 mb-2 text-2xl font-bold text-accent">Projects</h1>
+      <p className="mb-2 text-fore-subtle">
+        Game prototypes.
+      </p>
       <div className="border-t-2 border-dotted border-back-subtle"></div>
       <ProjectList selectedOnly={false} />
     </Fragment>

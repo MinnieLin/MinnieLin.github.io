@@ -6,7 +6,7 @@ import PostList from '../../components/postList'
 import { getAllFrontMatters } from '../../lib/mdx'
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'Teaching',
 }
 
 export default async function Blog() {
@@ -17,15 +17,11 @@ export default async function Blog() {
         <Blog24 />
       </span>
       <h1 className="mt-3 mb-2 text-2xl font-bold tracking-tight text-accent">
-        Blog
+        Teaching
       </h1>
 
       <p className="mb-2 text-fore-subtle">
-        Welcome to my little corner of the internet! Here's where I dump my
-        brain thoughts about research, random discoveries, and whatever else
-        catches my attention. <b>Fair warning</b>: I update this about as
-        frequently as I remember to water my plants - which is to say, when I
-        remember they exist 😅
+        List of courses I taught or currently teaching...
       </p>
       <div className="border-t-2 border-dotted border-back-subtle"></div>
       <PostList />

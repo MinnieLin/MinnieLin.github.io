@@ -184,13 +184,13 @@ export default async function Page() {
           <span>→</span>
         </Link>
       </div>
-      {/* Blogs  */}
-      {/* <div className="flex items-center mt-16 space-x-3">
+      
+      <div className="flex items-center mt-16 space-x-3">
         <span className="p-3 rounded-full bg-back-subtle">
           <Blog24 />
         </span>
         <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent">
-          Blogs
+          Teaching
         </span>
       </div>
       <PostList />
@@ -200,21 +200,21 @@ export default async function Page() {
           className="flex items-center space-x-2 text-fore-subtle hover:text-accent transition-transform ease-in-out hover:translate-x-1"
         >
           <span className="text-xs uppercase tracking-[.2em]">
-            All Blog Posts
+            All Courses
           </span>
           <span>→</span>
         </Link>
-      </div> */}
+      </div>
       {/* <div className="flex items-center mt-32 mb-2 space-x-3">
         <span className="p-3 rounded-full bg-back-subtle">
           <Project24 />
         </span>
         <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent">
-          PROJECTS
+          Courses
         </span>
-      </div> */}
-      {/* <ProjectList bOpenSourceOnly={true} /> */}
-      {/* <Contact /> */}
+      </div>
+      {/* <ProjectList bOpenSourceOnly={true} />
+      <Contact /> */}
     </div>
   )
 }

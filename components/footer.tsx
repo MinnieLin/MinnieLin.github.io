@@ -37,13 +37,9 @@ export function Footer() {
                 <a className="underline" href="https://nextjs.org/">
                   Next.js
                 </a>
-                . Inspired by{' '}
-                <a className="underline" href="https://jeffjadulco.com/">
-                  Jeff Jadulco
-                </a>{' '}
-                and{' '}
-                <a className="underline" href="https://victordibia.com/">
-                  Victor Dibia
+                . Template borrowed from {' '}
+                <a className="underline" href="https://zexinxu.com">
+                  Zexin (Jason) Xu
                 </a>
                 .
               </div>

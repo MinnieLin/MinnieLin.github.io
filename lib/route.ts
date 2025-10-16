@@ -8,10 +8,10 @@ export const routes = [
   //   path: '/about',
   //   label: 'ABOUT',
   // },
-  // {
-  //   path: 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/asonjay/asonjay.github.io/master/public/cv/Zexin_Xu_CV.pdf',
-  //   label: 'CV'
-  // },
+  {
+    path: 'https://drive.google.com/file/d/1hY4tDzGFuJFcHx_hx4JiQJzqLuvmbV2-/view?usp=sharing',
+    label: 'CV'
+  },
   {
     path: '/publications',
     label: 'PUBLICATIONS',
@@ -20,10 +20,10 @@ export const routes = [
     path: '/projects',
     label: 'PROJECTS',
   },
-  // {
-  //   path: '/blog',
-  //   label: 'BLOG',
-  // },
+  {
+    path: '/blog',
+    label: 'TEACHING',
+  },
   // {
   //   path: '/moments',
   //   label: 'MOMENTS',

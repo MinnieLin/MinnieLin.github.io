@@ -17,13 +17,14 @@ export const routes = [
     label: 'PUBLICATIONS',
   },
   {
-    path: '/projects',
-    label: 'PROJECTS',
-  },
-  {
     path: '/blog',
     label: 'TEACHING',
   },
+  {
+    path: '/projects',
+    label: 'PROJECTS',
+  },
+  
   // {
   //   path: '/moments',
   //   label: 'MOMENTS',

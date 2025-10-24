@@ -21,7 +21,7 @@ export default async function Blog() {
       </h1>
 
       <p className="mb-2 text-fore-subtle">
-        List of courses I taught or currently teaching...
+        My teaching philosophy centers on the belief that education should prepare students to think independently and adaptively. I emphasize active, reflective, and technology-enhanced learning to foster students’ engagement and deeper understanding in my classroom. 
       </p>
       <div className="border-t-2 border-dotted border-back-subtle"></div>
       <PostList />

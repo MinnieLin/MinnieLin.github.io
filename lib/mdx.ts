@@ -15,8 +15,12 @@ import type { Project } from '../types/project'
 const MDX_PATH = 'content/blog'
 const PROJECTS_PATH = 'content/projects'
 
+// async function getMdxBySlug(slug) {
+//   return getMdxByPath(path.join(MDX_PATH, `${slug}.mdx`))
+// }
 async function getMdxBySlug(slug) {
-  return getMdxByPath(path.join(MDX_PATH, `${slug}.mdx`))
+  const decodedSlug = decodeURIComponent(slug)
+  return getMdxByPath(path.join(MDX_PATH, `${decodedSlug}.mdx`))
 }
 
 async function getMdxByPath(mdxPath) {

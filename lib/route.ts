@@ -9,8 +9,9 @@ export const routes = [
   //   label: 'ABOUT',
   // },
   {
-    path: 'https://drive.google.com/file/d/1hY4tDzGFuJFcHx_hx4JiQJzqLuvmbV2-/view?usp=sharing',
-    label: 'CV'
+    path: 'https://drive.google.com/file/d/1_DhfnZAiCilmMxu8vL3d7bfyVqlMQsZo/view?usp=drive_link',
+    label: 'CV',
+    newTab: true
   },
   {
     path: '/publications',

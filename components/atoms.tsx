@@ -6,23 +6,71 @@ import {
   TextareaHTMLAttributes,
 } from 'react'
 
-export const NavLink = ({ to, title = 'Link', selected = false, ...props }) => {
+
+interface NavLinkProps {
+  to: string
+  title?: string
+  selected?: boolean
+  newTab?: boolean
+}
+
+export const NavLink = ({ to, title = 'Link', selected = false, newTab = false, ...props }: NavLinkProps) => {
+  // Check if it's an external link (starts with http:// or https://)
+  const isExternal = to.startsWith('http://') || to.startsWith('https://')
+  
+  const linkClasses = classNames(
+    'font-semibold tracking-wide text-sm hover:text-accent transition duration-150 ',
+    {
+      'text-accent': selected,
+      'text-fore-secondary': !selected,
+    }
+  )
+
+  // If it's an external link or newTab is true, use regular <a> tag
+  if (isExternal || newTab) {
+    return (
+      <a
+        href={to}
+        className={linkClasses}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {title}
+      </a>
+    )
+  }
+
+  // Otherwise use Next.js Link
   return (
     <Link
-      {...props}
       href={to}
-      className={classNames(
-        'font-semibold tracking-wide text-sm hover:text-accent transition duration-150 ',
-        {
-          'text-accent': selected,
-          'text-fore-secondary': !selected,
-        }
-      )}
+      className={linkClasses}
     >
       {title}
     </Link>
   )
 }
+
+
+// OLD CODE (open file in current tab)  
+// export const NavLink = ({ to, title = 'Link', selected = false, ...props }) => {
+//   return (
+//     <Link
+//       {...props}
+//       href={to}
+//       className={classNames(
+//         'font-semibold tracking-wide text-sm hover:text-accent transition duration-150 ',
+//         {
+//           'text-accent': selected,
+//           'text-fore-secondary': !selected,
+//         }
+//       )}
+//     >
+//       {title}
+//     </Link>
+//   )
+// }
+// ... rest of code remains the same
 
 export const ExtLink = ({
   children,

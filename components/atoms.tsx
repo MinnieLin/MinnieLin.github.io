@@ -12,6 +12,8 @@ interface NavLinkProps {
   title?: string
   selected?: boolean
   newTab?: boolean
+  children?: React.ReactNode  
+
 }
 
 export const NavLink = ({ to, title = 'Link', selected = false, newTab = false, ...props }: NavLinkProps) => {

@@ -9,7 +9,7 @@ export const routes = [
   //   label: 'ABOUT',
   // },
   {
-    path: 'https://drive.google.com/file/d/1_DhfnZAiCilmMxu8vL3d7bfyVqlMQsZo/view?usp=drive_link',
+    path: 'https://drive.google.com/file/d/1qAshqOyZavHQS50GcwFNeNZbdz3EguC1/view?usp=drive_link',
     label: 'CV',
     newTab: true
   },

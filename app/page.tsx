@@ -116,7 +116,7 @@ export default async function Page() {
               </span>
             </div>
           </div>
-          {/* CV  */}
+          {/* CV  
           <div className="mx-1 mt-2 flex items-center justify-center">
             <Link
               href="https://drive.google.com/file/d/1_DhfnZAiCilmMxu8vL3d7bfyVqlMQsZo/view?usp=sharing" 
@@ -129,7 +129,7 @@ export default async function Page() {
               </span>
               <div className="absolute inset-0 -z-10 rounded-lg bg-gradient-to-r from-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:from-accent/5 group-hover:to-transparent group-hover:opacity-100" />
             </Link>
-          </div>
+          </div>*/}
         </div>
       </div>
       {/* News  */}

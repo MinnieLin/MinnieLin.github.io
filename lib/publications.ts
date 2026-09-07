@@ -24,6 +24,7 @@ function parseBibTeX(content: string): Publication[] {
     if (
       type.toLowerCase() === 'article' ||
       type.toLowerCase() === 'inproceedings' ||
+      type.toLowerCase() === 'phdthesis' ||
       type.toLowerCase() === 'misc'
     ) {
       const publication: Partial<Publication> = {}

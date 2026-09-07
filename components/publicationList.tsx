@@ -88,7 +88,7 @@ export function PublicationList({
                             className="inline-flex items-center px-3 py-1 text-xs border border-accent text-accent hover:bg-accent hover:text-white rounded-md transition-all hover:shadow-sm"
                             target="_blank"
                           >
-                            PDF
+                            View
                           </Link>
                         )}
                         {pub.url && !pub.pdf && (

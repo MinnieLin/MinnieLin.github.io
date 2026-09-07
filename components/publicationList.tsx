@@ -76,12 +76,19 @@ export function PublicationList({
                           {pub.venue}
                         </p>
                       </div>
-                      <div className="flex items-center gap-3 mt-1">
-                        {pub.abbr && (
-                          <span className="inline-flex items-center px-3 py-1 text-xs font-semibold bg-gradient-to-r from-accent to-teal-600 text-white rounded-full shadow-sm">
-                            {pub.abbr}
-                          </span>
-                        )}
+                      <div className="flex flex-wrap items-center gap-3 mt-1">
+                        {pub.abbr
+                          ?.split(/[,;]/)
+                          .map(tag => tag.trim())
+                          .filter(Boolean)
+                          .map((tag, tagIndex) => (
+                            <span
+                              key={`${tag}-${tagIndex}`}
+                              className="inline-flex items-center px-3 py-1 text-xs font-semibold bg-gradient-to-r from-accent to-teal-600 text-white rounded-full shadow-sm"
+                            >
+                              {tag}
+                            </span>
+                          ))}
                         {pub.pdf && (
                           <Link
                             href={pub.pdf}
